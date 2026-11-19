@@ -30,9 +30,6 @@ pip install -r requirements.txt
 # Task 0 (unzip UHaT into starter/data/uhat/ first)
 cd starter && python check_starter.py && cd ..
 
-# Correctness checks + forbidden-import audit
-python run_checks.py
-
 # Part A
 python part_a_mae/train_mae.py
 python part_a_mae/train_classifier.py
@@ -49,14 +46,9 @@ python part_d_rag/chunk_and_index.py
 python part_d_rag/retriever.py
 python part_d_rag/generate_and_eval.py
 
-# Refresh tables, analysis, and README from logs
-python update_report.py
-
 # Launch web app
 streamlit run app/app.py
 ```
-
-For Kaggle GPU training, open `kaggle_run_all.ipynb`, attach the Kaggle UHaT dataset (`hazrat/uhat-urdu-handwritten-text-dataset`), set `REPO_URL`, and run all cells.
 
 ## Correctness Checks
 
@@ -130,5 +122,3 @@ Audit: PASS | files_scanned=24 | forbidden_imports=0
 - Analysis: `results/analysis.md`
 - Qualitative RAG samples: `results/samples.md`
 - Human evaluation sheet: `results/human_eval.csv`
-- Medium blog: `<INSERT_MEDIUM_LINK>`
-- LinkedIn post: `<INSERT_LINKEDIN_LINK>`
