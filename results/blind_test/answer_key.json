@@ -1,0 +1,247 @@
+{
+  "seed": 42,
+  "class_names": [
+    "alif",
+    "alif mad aa",
+    "ayn",
+    "baa",
+    "bari yaa",
+    "cheey",
+    "choti yaa",
+    "daal",
+    "dhaal",
+    "faa",
+    "gaaf",
+    "ghain",
+    "haa1",
+    "haa2",
+    "haa3",
+    "hamza",
+    "jeem",
+    "kaaf",
+    "khaa",
+    "laam",
+    "meem",
+    "noon",
+    "noonghunna",
+    "paa",
+    "qaaf",
+    "raa",
+    "rhraa",
+    "seen",
+    "seey",
+    "sheen",
+    "swaad",
+    "taa",
+    "ttaa",
+    "twa",
+    "waw",
+    "zaaa",
+    "zaal",
+    "zhaa",
+    "zwaa",
+    "zwaad"
+  ],
+  "items": [
+    {
+      "item_id": 0,
+      "image_file": "results/blind_test/img_00.png",
+      "true_label": "ttaa"
+    },
+    {
+      "item_id": 1,
+      "image_file": "results/blind_test/img_01.png",
+      "true_label": "daal"
+    },
+    {
+      "item_id": 2,
+      "image_file": "results/blind_test/img_02.png",
+      "true_label": "zwaad"
+    },
+    {
+      "item_id": 3,
+      "image_file": "results/blind_test/img_03.png",
+      "true_label": "khaa"
+    },
+    {
+      "item_id": 4,
+      "image_file": "results/blind_test/img_04.png",
+      "true_label": "bari yaa"
+    },
+    {
+      "item_id": 5,
+      "image_file": "results/blind_test/img_05.png",
+      "true_label": "zhaa"
+    },
+    {
+      "item_id": 6,
+      "image_file": "results/blind_test/img_06.png",
+      "true_label": "jeem"
+    },
+    {
+      "item_id": 7,
+      "image_file": "results/blind_test/img_07.png",
+      "true_label": "cheey"
+    },
+    {
+      "item_id": 8,
+      "image_file": "results/blind_test/img_08.png",
+      "true_label": "raa"
+    },
+    {
+      "item_id": 9,
+      "image_file": "results/blind_test/img_09.png",
+      "true_label": "seey"
+    },
+    {
+      "item_id": 10,
+      "image_file": "results/blind_test/img_10.png",
+      "true_label": "noon"
+    },
+    {
+      "item_id": 11,
+      "image_file": "results/blind_test/img_11.png",
+      "true_label": "meem"
+    },
+    {
+      "item_id": 12,
+      "image_file": "results/blind_test/img_12.png",
+      "true_label": "zaaa"
+    },
+    {
+      "item_id": 13,
+      "image_file": "results/blind_test/img_13.png",
+      "true_label": "qaaf"
+    },
+    {
+      "item_id": 14,
+      "image_file": "results/blind_test/img_14.png",
+      "true_label": "gaaf"
+    },
+    {
+      "item_id": 15,
+      "image_file": "results/blind_test/img_15.png",
+      "true_label": "seen"
+    },
+    {
+      "item_id": 16,
+      "image_file": "results/blind_test/img_16.png",
+      "true_label": "taa"
+    },
+    {
+      "item_id": 17,
+      "image_file": "results/blind_test/img_17.png",
+      "true_label": "swaad"
+    },
+    {
+      "item_id": 18,
+      "image_file": "results/blind_test/img_18.png",
+      "true_label": "rhraa"
+    },
+    {
+      "item_id": 19,
+      "image_file": "results/blind_test/img_19.png",
+      "true_label": "choti yaa"
+    },
+    {
+      "item_id": 20,
+      "image_file": "results/blind_test/img_20.png",
+      "true_label": "sheen"
+    },
+    {
+      "item_id": 21,
+      "image_file": "results/blind_test/img_21.png",
+      "true_label": "ghain"
+    },
+    {
+      "item_id": 22,
+      "image_file": "results/blind_test/img_22.png",
+      "true_label": "paa"
+    },
+    {
+      "item_id": 23,
+      "image_file": "results/blind_test/img_23.png",
+      "true_label": "faa"
+    },
+    {
+      "item_id": 24,
+      "image_file": "results/blind_test/img_24.png",
+      "true_label": "zaal"
+    },
+    {
+      "item_id": 25,
+      "image_file": "results/blind_test/img_25.png",
+      "true_label": "noonghunna"
+    },
+    {
+      "item_id": 26,
+      "image_file": "results/blind_test/img_26.png",
+      "true_label": "laam"
+    },
+    {
+      "item_id": 27,
+      "image_file": "results/blind_test/img_27.png",
+      "true_label": "baa"
+    },
+    {
+      "item_id": 28,
+      "image_file": "results/blind_test/img_28.png",
+      "true_label": "alif"
+    },
+    {
+      "item_id": 29,
+      "image_file": "results/blind_test/img_29.png",
+      "true_label": "hamza"
+    },
+    {
+      "item_id": 30,
+      "image_file": "results/blind_test/img_30.png",
+      "true_label": "kaaf"
+    },
+    {
+      "item_id": 31,
+      "image_file": "results/blind_test/img_31.png",
+      "true_label": "waw"
+    },
+    {
+      "item_id": 32,
+      "image_file": "results/blind_test/img_32.png",
+      "true_label": "haa1"
+    },
+    {
+      "item_id": 33,
+      "image_file": "results/blind_test/img_33.png",
+      "true_label": "haa3"
+    },
+    {
+      "item_id": 34,
+      "image_file": "results/blind_test/img_34.png",
+      "true_label": "zwaa"
+    },
+    {
+      "item_id": 35,
+      "image_file": "results/blind_test/img_35.png",
+      "true_label": "ayn"
+    },
+    {
+      "item_id": 36,
+      "image_file": "results/blind_test/img_36.png",
+      "true_label": "twa"
+    },
+    {
+      "item_id": 37,
+      "image_file": "results/blind_test/img_37.png",
+      "true_label": "alif mad aa"
+    },
+    {
+      "item_id": 38,
+      "image_file": "results/blind_test/img_38.png",
+      "true_label": "haa2"
+    },
+    {
+      "item_id": 39,
+      "image_file": "results/blind_test/img_39.png",
+      "true_label": "dhaal"
+    }
+  ]
+}

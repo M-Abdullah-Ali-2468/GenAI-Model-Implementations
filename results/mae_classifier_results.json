@@ -1,0 +1,192 @@
+{
+  "labelled_train_images": 160,
+  "test_images": 5400,
+  "test_accuracy": 0.5372,
+  "test_accuracy_pct": 53.72,
+  "top_confused_pairs": [
+    {
+      "true": "AnnualCrop",
+      "predicted": "PermanentCrop",
+      "count": 154
+    },
+    {
+      "true": "SeaLake",
+      "predicted": "Pasture",
+      "count": 149
+    },
+    {
+      "true": "PermanentCrop",
+      "predicted": "HerbaceousVegetation",
+      "count": 111
+    },
+    {
+      "true": "River",
+      "predicted": "Highway",
+      "count": 105
+    },
+    {
+      "true": "Highway",
+      "predicted": "River",
+      "count": 97
+    },
+    {
+      "true": "HerbaceousVegetation",
+      "predicted": "Residential",
+      "count": 96
+    },
+    {
+      "true": "Residential",
+      "predicted": "HerbaceousVegetation",
+      "count": 87
+    },
+    {
+      "true": "Pasture",
+      "predicted": "River",
+      "count": 74
+    },
+    {
+      "true": "SeaLake",
+      "predicted": "River",
+      "count": 73
+    },
+    {
+      "true": "HerbaceousVegetation",
+      "predicted": "PermanentCrop",
+      "count": 72
+    }
+  ],
+  "confusion_matrix": [
+    [
+      244,
+      7,
+      24,
+      53,
+      29,
+      27,
+      154,
+      48,
+      10,
+      0
+    ],
+    [
+      0,
+      475,
+      1,
+      0,
+      0,
+      39,
+      0,
+      0,
+      39,
+      54
+    ],
+    [
+      16,
+      17,
+      265,
+      36,
+      19,
+      7,
+      72,
+      96,
+      42,
+      3
+    ],
+    [
+      54,
+      17,
+      39,
+      141,
+      18,
+      40,
+      44,
+      46,
+      97,
+      0
+    ],
+    [
+      6,
+      0,
+      0,
+      20,
+      438,
+      0,
+      6,
+      28,
+      3,
+      0
+    ],
+    [
+      4,
+      24,
+      30,
+      15,
+      1,
+      237,
+      4,
+      7,
+      74,
+      0
+    ],
+    [
+      47,
+      7,
+      111,
+      32,
+      20,
+      12,
+      267,
+      30,
+      12,
+      0
+    ],
+    [
+      10,
+      3,
+      87,
+      62,
+      34,
+      5,
+      44,
+      275,
+      34,
+      0
+    ],
+    [
+      46,
+      35,
+      10,
+      105,
+      22,
+      47,
+      6,
+      15,
+      242,
+      1
+    ],
+    [
+      0,
+      34,
+      1,
+      2,
+      1,
+      149,
+      1,
+      31,
+      73,
+      317
+    ]
+  ],
+  "class_names": [
+    "AnnualCrop",
+    "Forest",
+    "HerbaceousVegetation",
+    "Highway",
+    "Industrial",
+    "Pasture",
+    "PermanentCrop",
+    "Residential",
+    "River",
+    "SeaLake"
+  ]
+}

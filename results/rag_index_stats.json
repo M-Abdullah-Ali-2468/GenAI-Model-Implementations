@@ -1,0 +1,9 @@
+{
+  "num_abstracts": 40181,
+  "num_chunks": 79332,
+  "num_test_questions": 707,
+  "mean_relevant_abstracts_per_question": 8.6634,
+  "norm_min": 0.9999998211860657,
+  "norm_max": 1.0000001192092896,
+  "index_time_sec": 215.19
+}

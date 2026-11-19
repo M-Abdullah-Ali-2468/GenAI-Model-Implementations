@@ -1,0 +1,1057 @@
+{
+  "seed": 42,
+  "items": [
+    {
+      "qid": 944,
+      "question": "Has protein citrullination been implicated in rheumatoid arthritis?",
+      "reference_answer": "Yes, protein citrullination been implicated in rheumatoid arthritis.",
+      "relevant_ids": [
+        24498912,
+        24782594,
+        25515746,
+        24823363,
+        25475141,
+        24763532,
+        24497204,
+        25520183,
+        25182207,
+        25116951,
+        24724574,
+        25355199
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "abstract_id": 25520183,
+          "score": 0.7599,
+          "text": "OBJECTIVE: Citrullination has become a hot topic within recent years due to its involvement in diseases such as rheumatoid arthritis (RA), multiple sclerosis and fibrosis. Citrullinations are the conversion of arginine to citrulline by peptidylarginine deiminase (PAD) enzymes, which affect protein properties. The aim of this review is to summarize the advances in citrullination research and further explore the potential of citrullination as a diagnostic tool as well as inhibition of PAD enzymes as a target for treatment. METHOD: We reviewed current literature with emphasis on the role of citrullination in health and disease, the nature of enzymes responsible for citrullination, and the potential of applying citrullinations in diagnostics and pharmaceuticals. CONCLUSION: Current literature suggests that increased levels of citrullinated proteins are found in several if not all inflammatory diseases. In RA measurement of anti-citrullinated protein antibodies (ACPA) against citrullinated protein fragments are widely used as a prognostic biomarker. More"
+        },
+        {
+          "rank": 2,
+          "abstract_id": 25182207,
+          "score": 0.7264,
+          "text": "Rheumatoid arthritis (RA) is a chronic autoimmune disease characterized by the presence of rheumatoid factor (RF) and anti-citrullinated protein/peptide autoantibodies (ACPAs). Citrulline derives from arginine by peptidyl arginine deiminases, and ACPAs are directed against different citrullinated antigens, including fibrinogen, fibronectin, \u03b1-enolase, collagen type II, histones. ACPAs are present in two thirds of RA patients have higher specificity than RF for RA, and are associated with joint radiographic damage and extra-articular manifestations and they are detected years before the onset clinical arthritis. Recent studies suggest that citrullinated antigens are most likely arthritogenic autoantigens in RA. ACPA production is associated with the HLA-DRB1 shared epitope (HLA-DRB1 SE) and accounts for the well-known RA-HLA-DRB1 SE association, as T cells recognize citrullinated peptides. Smoking and periodontitis, known environmental risk factors for RA promote protein citrullination and ACPA production. Cirullinated proteins are capable of inducing arthritis in transgenic mice carrying HLA-DRB1 SE genes, and ACPAs"
+        },
+        {
+          "rank": 3,
+          "abstract_id": 24763532,
+          "score": 0.693,
+          "text": "Rheumatoid arthritis (RA) is an autoimmune disease affecting \u223c1 % of the population. Although major advances have been made in the treatment of RA, relatively little is known about disease pathogenesis. Autoantibodies, present in approximately 60 % of the patients with early disease, might provide indications for immunological mechanisms underlying RA. Among the RA-associated autoantibodies, especially anti-citrullinated protein antibodies (ACPAs) have been studied intensively in the last decade. The discovery of ACPAs resulted into novel insight in RA pathogenesis and allowed division of the heterogeneous entity of RA into an ACPA-positive and ACPA-negative subset of disease. Other autoantibodies discovered in the serum of RA patients, including rheumatoid factors (RFs) targeting human IgG and anti-peptidylarginine deiminase (PAD)3/4 antibodies reactive against and activating the enzyme involved in citrullination, might contribute in collaboration with ACPAs to a feed-forward loop to aggravate erosive outcome of disease. Recently, a novel autoantibody system associated with RA"
+        },
+        {
+          "rank": 4,
+          "abstract_id": 25520183,
+          "score": 0.6819,
+          "text": "proteins are found in several if not all inflammatory diseases. In RA measurement of anti-citrullinated protein antibodies (ACPA) against citrullinated protein fragments are widely used as a prognostic biomarker. More recently, it has been indicated that levels of selected citrullinated proteins carries additional potential as biomarkers. This includes citrullinated vimentin which provide prognostic information in diseases as fibrosis and ankylosing spondylitis. In addition, recent studies suggest that inhibition of PAD is a target for treatment of diseases such as RA and cancer where proteins that are citrullinated are believed to influence the disease activity."
+        },
+        {
+          "rank": 5,
+          "abstract_id": 25515746,
+          "score": 0.6786,
+          "text": "Rheumatoid arthritis (RA) is a chronic autoimmune disease that causes joint inflammation and extra-articular manifestations. To prevent progressive and irreversible structural damage, early diagnosis of RA is of paramount importance. Antibodies directed against citrullinated proteins and peptides (ACPAs) are the most specific serological markers available for diagnosing RA. ACPAs may be detected several years before symptoms appear, and their presence at disease onset is a good predictor of the development of erosive joint lesions. Synthetic peptides can replace cognate proteins in solid-phase assays for specific autoantibody recognition in RA patients. The use of synthetic peptides instead of proteins represents an advantage in terms of the reproducibility of such immunoassays. They give absolute control over the exact epitopes presented. Furthermore, it is difficult to prepare sufficient amounts of high-quality antigenic proteins with a well-defined degree of citrullination. Synthetic citrullinated peptides, in contrast, are easily obtained in a pure form with a"
+        }
+      ],
+      "retrieval_hit_top5": true,
+      "generated_answer": "Yes, protein citrullination has been implicated in rheumatoid arthritis. Passage [2] states that \"Rheumatoid arthritis (RA) is a chronic autoimmune disease characterized by the presence of rheumatoid factor (RF) and anti-citrullinated protein/peptide autoantibodies (ACPAs).\" Additionally, passage [3] mentions that \"Recent studies suggest that citrullinated antigens are most likely arthritogenic autoantigens in RA,\" indicating that citrullinated proteins play a role in the pathology of rheumatoid arthritis.",
+      "citations": [
+        2,
+        3
+      ],
+      "is_idk": false,
+      "rouge_l": 0.2133
+    },
+    {
+      "qid": 2598,
+      "question": "Does MC1R palmitoylation reduce pigmentation?",
+      "reference_answer": "No, MC1R palmitoylation leads to increased pigmentation.",
+      "relevant_ids": [
+        28869973
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "abstract_id": 28869973,
+          "score": 0.7224,
+          "text": "therapeutic benefit by activating MC1R protein palmitoylation. MC1R palmitoylation, primarily mediated by the protein-acyl transferase ZDHHC13, is essential for activating MC1R signalling, which triggers increased pigmentation, ultraviolet-B-induced G1-like cell cycle arrest and control of senescence and melanomagenesis in vitro and in vivo. Using C57BL/6J-Mc1re/eJ mice, in which endogenous MC1R is prematurely terminated, expressing Mc1r RHC variants, we show that pharmacological activation of palmitoylation rescues the defects of Mc1r RHC variants and prevents melanomagenesis. The results highlight a central role for MC1R palmitoylation in pigmentation and protection against melanoma."
+        },
+        {
+          "rank": 2,
+          "abstract_id": 28869973,
+          "score": 0.5959,
+          "text": "The melanocortin-1 receptor (MC1R), a G-protein-coupled receptor, has a crucial role in human and mouse pigmentation. Activation of MC1R in melanocytes by \u03b1-melanocyte-stimulating hormone (\u03b1-MSH) stimulates cAMP signalling and melanin production and enhances DNA repair after ultraviolet irradiation. Individuals carrying MC1R variants, especially those associated with red hair colour, fair skin and poor tanning ability (denoted as RHC variants), are associated with higher risk of melanoma. However, how MC1R activity is modulated by ultraviolet irradiation, why individuals with red hair are more prone to developing melanoma, and whether the activity of RHC variants might be restored for therapeutic benefit are unknown. Here we demonstrate a potential MC1R-targeted intervention strategy in mice to rescue loss-of-function MC1R in MC1R RHC variants for therapeutic benefit by activating MC1R protein palmitoylation. MC1R palmitoylation, primarily mediated by the protein-acyl transferase ZDHHC13, is essential for activating MC1R signalling, which triggers increased pigmentation, ultraviolet-B-induced G1-like cell cycle"
+        },
+        {
+          "rank": 3,
+          "abstract_id": 16704453,
+          "score": 0.5191,
+          "text": "accurately measured in neonatal skin, we identified 883, 2097 and 552 genes that were uniquely expressed in the suprabasal epidermis, basal epidermis and dermis, respectively; specific biologic roles could be assigned for each class. Comparison of normal and recessive yellow mice revealed 69 differentially expressed genes, of which the majority had not been previously implicated in Mc1r signaling. Surprisingly, many of the Mc1r-dependent genes are expressed in cells other than melanocytes, even though Mc1r expression in the skin is confined almost exclusively to epidermal melanocytes. These results reveal new targets for Mc1r signaling, and point to a previously unappreciated role for a Mc1r-dependent paracrine effect of melanocytes on other components of the skin."
+        },
+        {
+          "rank": 4,
+          "abstract_id": 18484624,
+          "score": 0.5152,
+          "text": "The Melanocortin-1 Receptor (MC1R) is a G-protein coupled receptor, which is responsible for production of the darker eumelanin pigment and the tanning response. The MC1R gene has many polymorphisms, some of which have been linked to variation in pigmentation phenotypes within human populations. In particular, the p.D84E, p.R151C, p.R160W and p.D294 H alleles have been strongly associated with red hair, fair skin and increased skin cancer risk. These red hair colour (RHC) variants are relatively well described and are thought to result in altered receptor function, while still retaining varying levels of signaling ability in vitro. The mouse Mc1r null phenotype is yellow fur colour, the p.R151C, p.R160W and p.D294 H alleles were able to partially rescue this phenotype, leading to the question of what the true null phenotype of MC1R would be in humans. Due to the rarity of MC1R null alleles in human populations, they have only been"
+        },
+        {
+          "rank": 5,
+          "abstract_id": 18366057,
+          "score": 0.5139,
+          "text": "with red hair and fair skin, while p.D84E, p.R142H, and p.R151C were strongly associated with red hair only- ORs (95%CI) ranged from 2.99 (1.51-5.91) for p.D84E to 8.10 (5.82-11.28) for p.R151C. No association with melanoma or phenotype was found for p.V60L and p.V92M variants. In conclusion this meta-analysis provided evidence that some MC1R variants are associated both with melanoma and phenotype, while other are only associated with melanoma development. These results suggest that MC1R variants could play a role in melanoma development both via pigmentary and non-pigmentary pathways."
+        }
+      ],
+      "retrieval_hit_top5": true,
+      "generated_answer": "No, MC1R palmitoylation does not reduce pigmentation. [1]",
+      "citations": [
+        1
+      ],
+      "is_idk": false,
+      "rouge_l": 0.5333
+    },
+    {
+      "qid": 873,
+      "question": "What is the function of the AtxA pleiotropic regulator?",
+      "reference_answer": "AtxA is the gene encoding the trans-activator of anthrax toxin synthesis and is essential for virulence of B. anthracis. It is located on the resident 185-kb plasmid pXO1 and its activation is stimulated by bicarbonate. AtxA controls the expression of more than a hundred genes belonging to all genetic elements, the chromosome and both virulence plasmids, including those encoding the major virulence factors. AtxA can activate or repress gene expression. In atxA+ strains, toxin gene expression is increased 5- to 20-fold in cells grown in 5% CO2 relative to cells grown in air. Dual promoters control expression of AtxA.  Transcription of the atxA gene occurs from two independent promoters, P1 and P2, whose transcription start sites are separated by 650 bp.",
+      "relevant_ids": [
+        18676674,
+        8577251,
+        9106214,
+        9234759,
+        21911592,
+        22636778,
+        17302796,
+        20863885,
+        17302798,
+        9119194,
+        19651859,
+        21923765,
+        24661624,
+        14702298,
+        10361306,
+        9199422
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "abstract_id": 20863885,
+          "score": 0.461,
+          "text": "Fifteen years ago, AtxA was isolated as a toxin gene activator and five years later it was shown to be a Bacillus anthracis master regulator. AtxA controls the expression of more than a hundred genes belonging to all genetic elements, the chromosome and both virulence plasmids, including those encoding the major virulence factors. AtxA can activate or repress gene expression. The mechanism by which AtxA exerts its control is unknown; it is indirect on some genes but may be direct on others. The expression of many AtxA-controlled genes is induced by the presence of bicarbonate/CO(2). AtxA links the metabolic state and virulence gene expression."
+        },
+        {
+          "rank": 2,
+          "abstract_id": 9106214,
+          "score": 0.4398,
+          "text": "of the upstream region of the cap promoter revealed that activation by both atxA and acpA required a DNA segment of 70 bp extending upstream of the P1 site. These results suggest that cross-talk by atxA to the genes encoding capsule synthesis is caused by the interaction of the atxA gene product with a regulatory sequence upstream of cap."
+        },
+        {
+          "rank": 3,
+          "abstract_id": 8670839,
+          "score": 0.4326,
+          "text": "promoter, followed by the activation of transcription. A regulon of genes under the control of AFT1 could be defined. AFT1 was able to bind to a consensus binding site (PyPuCACCCPu) in the 5' region of FRE1, FRE2, FTR1, FTH1 and CCC2."
+        },
+        {
+          "rank": 4,
+          "abstract_id": 15149039,
+          "score": 0.4314,
+          "text": "a transcriptional repressor of eag. Furthermore, in vitro in presence of CO2 and in vivo, AtxA is part of the sap and eag regulatory network. Only eag is significantly expressed in these conditions and this is due to AtxA activating eag and repressing sap transcription. PagR, and not AtxA itself, is the direct effector of this regulation by binding to sap and eag promoter regions. Therefore, PagR mediates the effect of AtxA on eag and sap and is the most downstream element of a signalling cascade initiated by AtxA. Taken together, these results indicate that the B. anthracis transcriptional regulator AtxA is controlling the synthesis of the three toxin components and of the surface elements (capsule and S-layer). Thus, AtxA is a master regulator that coordinates the response to host signals by orchestrating positive and negative controls over genes located on all genetic elements."
+        },
+        {
+          "rank": 5,
+          "abstract_id": 19250647,
+          "score": 0.4223,
+          "text": "from the ASCL1 promoter and requires the Eh1-like motif for maximal effect. Collectively, these results indicate that TLX1-mediated target gene activation can occur in part via derepression strategies involving Gro/TLE corepressors."
+        }
+      ],
+      "retrieval_hit_top5": true,
+      "generated_answer": "The function of the AtxA pleiotropic regulator is to coordinate the response to host signals by orchestrating positive and negative controls over genes located on all genetic elements, including the chromosome and both virulence plasmids, through the regulation of the expression of more than a hundred genes. This includes the control of the synthesis of the three toxin components and of the surface elements (capsule and S-layer), demonstrating its role as a master regulator in Bacillus anthracis.",
+      "citations": [],
+      "is_idk": false,
+      "rouge_l": 0.2376
+    },
+    {
+      "qid": 4121,
+      "question": "Describe a cytokine release syndrome.",
+      "reference_answer": "The major factor responsible for acute respiratory distress syndrome is the so-called \"cytokine storm,\" which is an aberrant response from the host immune system that induces an exaggerated release of proinflammatory cytokines/chemokines.",
+      "relevant_ids": [
+        32983172,
+        18382853,
+        32474885,
+        32776808,
+        33262810,
+        32678378,
+        17471824,
+        32166291,
+        31755797,
+        32446778
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "abstract_id": 32678378,
+          "score": 0.8953,
+          "text": "Cytokine release syndrome is a systemic inflammatory condition that may occur after treatment with some types of immunotherapy."
+        },
+        {
+          "rank": 2,
+          "abstract_id": 17471824,
+          "score": 0.7375,
+          "text": "Cytokine-release syndrome is a symptom complex associated with the use of many monoclonal antibodies. Commonly referred to as an infusion reaction, it results from the release of cytokines from cells targeted by the antibody as well as immune effector cells recruited to the area. When cytokines are released into the circulation, systemic symptoms such as fever, nausea, chills, hypotension, tachycardia, asthenia, headache, rash, scratchy throat, and dyspnea can result. In most patients, the symptoms are mild to moderate in severity and are managed easily. However, some patients may experience severe, life-threatening reactions that result from massive release of cytokines. Severe reactions occur more commonly during the first infusion in patients with hematologic malignancies who have not received prior chemotherapy; severe reactions are marked by their rapid onset and the acuity of associated symptoms. Massive cytokine release is an oncologic emergency, and special precautions must be taken to prevent life-threatening complications."
+        },
+        {
+          "rank": 3,
+          "abstract_id": 17471824,
+          "score": 0.6746,
+          "text": "reactions are marked by their rapid onset and the acuity of associated symptoms. Massive cytokine release is an oncologic emergency, and special precautions must be taken to prevent life-threatening complications. This article will present an overview of the etiology and management of cytokine-release syndrome in patients receiving monoclonal antibodies to better prepare oncology nurses to safely care for such patients."
+        },
+        {
+          "rank": 4,
+          "abstract_id": 31755797,
+          "score": 0.6393,
+          "text": "Immune cells secrete small protein molecules that aim for cell-cell communications. These small molecules are called cytokines. Targeting cancer cells with administration of bispecific antibodies and natural extracts results in elevated circulating levels of inflammatory cytokines, including interferon-\u03b3 and interleukin (IL)-6, which lead to cell toxicity. Sustained release of cytokines due to immunotherapy or hormonal issues causes various diseases. Novel T cell-engaging therapies and monoclonal antibodies cause cytokine release syndrome. Efforts are being carried out to maximize the chance for therapeutic benefit from immunotherapy while minimizing the risk for life-threatening complications of sustained cytokine release. Neurodegeneration and cardiac diseases are the prominent diseases caused by inflammatory cytokines. The phenomenon is called cytokine storm. Cytokines can act antagonistically or synergistically. Constitutive expression of proinflammatory cytokines such as IL-3 and IL-6 causes organ damage and unbearable pain. In this review, we will discuss the regulators of cytokine release, its types, its implications"
+        },
+        {
+          "rank": 5,
+          "abstract_id": 20736486,
+          "score": 0.6241,
+          "text": "Cytokine storm is an immune reaction to an acute or chronic injury and may be caused by a disease itself or by treatment directed at an underlying disease. The result is an overwhelming release of cytokines which can cause a sepsis-like response and may lead to multi-system organ failure and even death. Because it occurs in various settings, oncology nurses need to be aware of this process when assessing the pediatric oncology patient. Early recognition and treatment initiation is imperative and may lead to better outcomes for the patient."
+        }
+      ],
+      "retrieval_hit_top5": true,
+      "generated_answer": "Cytokine release syndrome (CRS) is a systemic inflammatory condition that can occur following treatment with certain immunotherapies, particularly those targeting cancer cells using bispecific antibodies or natural extracts. It involves the release of cytokines from both the target cells and immune effector cells responding to the therapy. Symptoms often include fever, nausea, chills, hypotension, tachycardia, fatigue, and other signs indicative of a systemic inflammatory response. Mild cases may respond to supportive care, but severe reactions requiring intervention are possible, especially in high-risk populations such as those with hematologic malignancies without prior chemotherapy exposure. Specialized monitoring and management protocols are essential to mitigate these risks.",
+      "citations": [],
+      "is_idk": false,
+      "rouge_l": 0.1151
+    },
+    {
+      "qid": 876,
+      "question": "Can fetal aneuploidy be detected with non-invasive prenatal testing?",
+      "reference_answer": "Yes, the non-invasive preanatal test of cell-free fetal DNA is being used for fetal aneuploidy screening.",
+      "relevant_ids": [
+        25449088,
+        25238658,
+        17186566,
+        23765643,
+        24352524,
+        24990604,
+        23089167,
+        26080919,
+        23553438,
+        21076134,
+        24312358,
+        26237478,
+        25044397,
+        24667696,
+        24603453,
+        25138112,
+        23712453,
+        26252102,
+        24783433,
+        23299662,
+        21574485,
+        10655451,
+        21749753,
+        25543032,
+        22500971,
+        22863603,
+        24482806,
+        25478006,
+        21749752,
+        23526649,
+        23470070
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "abstract_id": 26252102,
+          "score": 0.815,
+          "text": "rapidly detect fetal chromosomal aneuploidies. The method is non-invasive, and the results are highly consistent with karyotype analysis in terms of accuracy and specificity. Non-invasive testing can be used as an effective adjunct to conventional prenatal diagnostic methods, which can greatly reduce unnecessary invasive prenatal diagnosis. However, the sensitivity and accuracy for aneuploidy detection other than chromosome 13/18/21 still need to be improved."
+        },
+        {
+          "rank": 2,
+          "abstract_id": 23089167,
+          "score": 0.7696,
+          "text": "Prenatal detection of fetal aneuploidies is one of the main goals of the prenatal diagnostic approach. As a benefit of the development of advanced ultrasound equipment and advances in molecular biology in the last decade, there is a significant progress in screening methods for fetal aneuploidies, although invasive methods remain the gold standard for aneuploidy detection. Non-invasive prenatal diagnosis has substantial medical impact as it targets the development of safer and more effective methods to avoid the risk of fetal loss associated with currently used invasive methods. Identification of fetal-specific messenger ribonucleic acids, digital polymerase chain reaction and next-generation sequencing give the real chance for non-invasive prenatal diagnosis of fetal aneuploidies. Although all these methods have both advantages and limitations, some of them are moving closer to clinical implementation. In this review the authors highlight the most recent advances in methods for non-invasive prenatal diagnosis of aneuploidies."
+        },
+        {
+          "rank": 3,
+          "abstract_id": 21749752,
+          "score": 0.7514,
+          "text": "OBJECTIVE: To develop a Canadian consensus document on maternal screening for fetal aneuploidy (e.g., Down syndrome and trisomy 18) in singleton pregnancies. OPTIONS: Pregnancy screening for fetal aneuploidy started in the mid 1960s, using maternal age as the screening test. New developments in maternal serum and ultrasound screening have made it possible to offer all pregnant patients a non-invasive screening test to assess their risk of having a fetus with aneuploidy to determine whether invasive prenatal diagnostic testing is necessary. This document reviews the options available for non-invasive screening and makes recommendations for Canadian patients and health care workers. OUTCOMES: To offer non-invasive screening for fetal aneuploidy (trisomy 13, 18, 21) to all pregnant women. Invasive prenatal diagnosis would be offered to women who screen above a set risk cut-off level on non-invasive screening or to pregnant women whose personal, obstetrical, or family history places them at increased risk. Currently"
+        },
+        {
+          "rank": 4,
+          "abstract_id": 21574485,
+          "score": 0.7296,
+          "text": "The incidence of numerical chromosome aberrations is about 5% during the entire pregnancy and about 0.2% in live-born infants. Most commonly observed numerical aberrations in live births are trisomies of chromosomes 13, 18, 21, X and Y and monosomy of the X chromosome. It is estimated that approximately 70-80% of newborns with aneuploidies are born by women who did not present obvious risk factors, therefore, according to a recent recommendation by PTG, prenatal diagnosis increasing the detection of fetal aneuploidy should be offered to the entire population of women. Due to the risk of complications associated with invasive tests and a large number of unnecessarily performed tests of this type, it is postulated that invasive diagnostics should be used in very specific cases, and a non-invasive diagnostics should have a screening character Non-invasive diagnostics include: 1) detailed ultrasonography performed in 11-13 (+6 days) hbd and in 18-24 hbd; 2) biochemical"
+        },
+        {
+          "rank": 5,
+          "abstract_id": 23712453,
+          "score": 0.7293,
+          "text": "the 187 samples, for 934/935 correct calls as early as 9.4 weeks of gestation. We detected 45,X with 91.7% sensitivity (CI: 61.5-99.8%) and 100% specificity (CI: 97.9-100%), and 47,XXY and 47,XYY. The average calculated accuracy was 99.78%. CONCLUSION: This method non-invasively detected 45,X, 47,XXY, and 47,XYY fetuses from cell-free DNA isolated from maternal plasma with high calculated accuracies and thus offers a non-invasive method with the potential to function as a routine screen allowing for early prenatal detection of rarely diagnosed yet commonly occurring sex aneuploidies."
+        }
+      ],
+      "retrieval_hit_top5": true,
+      "generated_answer": "Yes, fetal aneuploidy can be detected with non-invasive prenatal testing. Passage [5] states that this method non-invasively detected 45,X, 47,XXY, and 47,XYY fetuses from cell-free DNA isolated from maternal plasma with high calculated accuracies.",
+      "citations": [
+        5
+      ],
+      "is_idk": false,
+      "rouge_l": 0.2414
+    },
+    {
+      "qid": 641,
+      "question": "Which CDK targets control cytokinesis?",
+      "reference_answer": "Aip1, Ede1 and Inn1 are CDK targets whose dephosphorylation is required for cytokinesis.",
+      "relevant_ids": [
+        25371407
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "abstract_id": 25371407,
+          "score": 0.7309,
+          "text": "suggest that cytokinesis is coordinately controlled by the master cell cycle regulator Cdk together with its counteracting phosphatase and that it is executed by concerted dephosphorylation of Cdk targets involved in several cell biological processes."
+        },
+        {
+          "rank": 2,
+          "abstract_id": 20442249,
+          "score": 0.5797,
+          "text": "uncoordinated extension of the primary and secondary septa. This defect was partially suppressed by increased levels of Cyk3. We therefore propose that the MEN directly controls cytokinesis via targeting of Inn1, Cyk3 and Chs2 to the bud neck."
+        },
+        {
+          "rank": 3,
+          "abstract_id": 25371407,
+          "score": 0.5718,
+          "text": "The final event of the eukaryotic cell cycle is cytokinesis, when two new daughter cells are born. How the timing and execution of cytokinesis is controlled is poorly understood. Here, we show that downregulation of cyclin-dependent kinase (Cdk) activity, together with upregulation of its counteracting phosphatase Cdc14, controls each of the sequential steps of cytokinesis, including furrow ingression, membrane resolution and cell separation in budding yeast. We use phosphoproteome analysis of mitotic exit to identify Cdk targets that are dephosphorylated at the time of cytokinesis. We then apply a new and widely applicable tool to generate conditionally phosphorylated proteins to identify those whose dephosphorylation is required for cytokinesis. This approach identifies Aip1, Ede1 and Inn1 as cytokinetic regulators. Our results suggest that cytokinesis is coordinately controlled by the master cell cycle regulator Cdk together with its counteracting phosphatase and that it is executed by concerted dephosphorylation of Cdk targets involved"
+        },
+        {
+          "rank": 4,
+          "abstract_id": 32827605,
+          "score": 0.5655,
+          "text": "Subcellular localization results showed that CiSRC is located both in the cytoplasm and nucleus, while CiTBK1 is only located in the cytoplasm of CIK cells. When GFP-CiSRC and FLAG-CiTBK1 were co-transfected into CIK cells, we found that they were co-localized in the cytoplasm. GST-pulldown and Co-immunoprecipitation analysis revealed that CiSRC and CiSRC tyrosine kinase domain deletion mutant (SRC-\u0394Tyrkc) can interact with CiTBK1, respectively. CiSRC promotes the phosphorylation of CiTBK1. Furthermore, the phosphorylation of TBK1 is more strongly under poly (I:C) stimulation. We also demonstrated that SRC can up-regulate IFN I expression. These results above unraveled that CiSRC initiates innate immune response by binding to and then up-regulating the phosphorylation of TBK1."
+        },
+        {
+          "rank": 5,
+          "abstract_id": 34343033,
+          "score": 0.5605,
+          "text": "companion Diagnostics for CDK4 inhibition\u2014SKI2016-021-03 Jonathan TrentConsulting or Advisory Role: Novartis, Lilly, Janssen, Blueprint Medicines, Deciphera, Daiichi Sankyo, Epizyme, Agios, C4 Therapeutics, Bayer Patrick Sch\u00f6ffskiHonoraria: Deciphera, Blueprint Medicines, Boehringer IngelheimConsulting or Advisory Role: Blueprint Medicines, Ellipses Pharma, Adaptimmune, Intellisphere, Transgene, Deciphera, Exelixis, Boehringer Ingelheim, Medscape, Guided Clarity, Ysios Capital, Studiecentrum voor KernenergieResearch Funding: CoBioRes NV, Eisai, G1 Therapeutics, Novartis, PharmaMarTravel, Accommodations, Expenses: MSD, Ipsen, Boehringer Ingelheim Kevin HeEmployment: Blueprint Medicines, AgiosStock and Other Ownership Interests: Blueprint Medicines, Agios, Incyte Paggy HewEmployment: Blueprint MedicinesStock and Other Ownership Interests: Blueprint MedicinesTravel, Accommodations, Expenses: Blueprint Medicines Kate NewberryEmployment: Blueprint MedicinesStock and Other Ownership Interests: Blueprint Medicines Maria RocheEmployment: Blueprint Medicines, EpizymeStock and Other Ownership Interests: Blueprint Medicines, Epizyme Michael C. HeinrichStock and Other Ownership Interests: MolecularMDHonoraria: NovartisConsulting or Advisory Role: MolecularMD, Novartis, Blueprint Medicines, Deciphera, Theseus PharmaceuticalsPatents, Royalties, Other Intellectual Property: Patent on treatment of GIST-licensed to NovartisExpert Testimony: Novartis Sebastian BauerHonoraria: Novartis,"
+        }
+      ],
+      "retrieval_hit_top5": true,
+      "generated_answer": "Based on the information provided in passage [3], cytokinesis is coordinately controlled by the master cell cycle regulator Cdk together with its counteracting phosphatase Cdc14. It is executed by concerted dephosphorylation of Cdk targets involved in various cell biological processes.",
+      "citations": [
+        3
+      ],
+      "is_idk": false,
+      "rouge_l": 0.0755
+    },
+    {
+      "qid": 3094,
+      "question": "Can cardiospheres be produced from skin fibroblasts?",
+      "reference_answer": "Yes, induced cardiospheres (iCS) can be produced by somatic reprogramming of mouse fibroblasts using a panel of pluripotent transcription factors and cardiotrophic growth factors.",
+      "relevant_ids": [
+        29999590
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "abstract_id": 29999590,
+          "score": 0.5502,
+          "text": "Cardiospheres represent a more effective cell-based therapy for treatment of myocardial infarction than stem cells of non-cardiac origin. Unfortunately, their therapeutic application is limited by low yield of cell harvesting, declining quality and quantity during the aging process, and the need for highly invasive heart biopsy. Therefore, there is an emerging interest in generating cardiosphere-like stem cells from somatic cells via somatic reprogramming. This novel approach would provide an unlimited source of stem cells with cardiac differentiation potential. Here we provide the detailed protocol for generating induced cardiospheres (iCS) for cardiac regeneration by somatic reprogramming of mouse fibroblasts using a panel of pluripotent transcription factors and cardiotrophic growth factors. \u00a9 2018 by John Wiley & Sons, Inc."
+        },
+        {
+          "rank": 2,
+          "abstract_id": 24228508,
+          "score": 0.5416,
+          "text": "osteogenic and adipogenic differentiation were used to assay the differentiation ability change after induction. The induced dermal fibroblasts were frozen in liquid nitrogen and recovery and trypan blue was used to detect cell viability. RESULTS: After CTGF induction, PMSCs got obvious fibroblasts morphology, the protein level of Vimentin, FSP-1, collagen I, collagen III and Laminin increased, PMSCs started to express Desmin, the dermal fibroblasts specific proteins, and osteogenic and adipogenic differentiation ability was diminished. PMSCs were successfully induced into dermal fibroblasts, and these induced cells could get a high cell viability ( more than 90% ) after recovery. CONCLUSIONS: PMSCs could be induced into dermal fibroblasts by CTGF in vitro. PMSCs have the potential application in skin wound healing, and can be used as seed cells of dermal fibroblasts."
+        },
+        {
+          "rank": 3,
+          "abstract_id": 22522929,
+          "score": 0.5084,
+          "text": "infarct size and modestly attenuated cardiac dysfunction up to 3 months after coronary ligation. Delivery of the pro-angiogenic and fibroblast-activating peptide, thymosin b4, along with GMT, resulted in further improvements in scar area and cardiac function. These findings demonstrate that cardiac fibroblasts can be reprogrammed into cardiomyocyte-like cells in their native environment for potential regenerative purposes."
+        },
+        {
+          "rank": 4,
+          "abstract_id": 23861494,
+          "score": 0.505,
+          "text": "by analyzing multiple cardiac-specific gene induction with quantitative RT-PCR. The addition of Mesp1 and Myocd to GMT up-regulated a broader spectrum of cardiac genes in HCFs more efficiently compared with GMT alone. The HCFs and human dermal fibroblasts transduced with GMT, Mesp1, and Myocd (GMTMM) changed the cell morphology from a spindle shape to a rod-like or polygonal shape, expressed multiple cardiac-specific proteins, increased a broad range of cardiac genes and concomitantly suppressed fibroblast genes, and exhibited spontaneous Ca(2+) oscillations. Moreover, the cells matured to exhibit action potentials and contract synchronously in coculture with murine cardiomyocytes. A 5-ethynyl-2'-deoxyuridine assay revealed that the iCMs thus generated do not pass through a mitotic cell state. These findings demonstrate that human fibroblasts can be directly converted to iCMs by defined factors, which may facilitate future applications in regenerative medicine."
+        },
+        {
+          "rank": 5,
+          "abstract_id": 23474887,
+          "score": 0.5022,
+          "text": "be directly induced from fibroblasts by a combination of three cardiac transcription factors, Gata4, Mef2c and Tbx5, in vitro and in vivo. I will review the perspectives of heart regeneration using reprogramming technology."
+        }
+      ],
+      "retrieval_hit_top5": true,
+      "generated_answer": "Yes, cardiospheres can be produced from skin fibroblasts. [1]",
+      "citations": [
+        1
+      ],
+      "is_idk": false,
+      "rouge_l": 0.3636
+    },
+    {
+      "qid": 2565,
+      "question": "Does armodafinil improve fatigue of glioma patients?",
+      "reference_answer": "No. Eight week course of armodafinil did not improve fatigue or quality of life in glioma patients undergoing radiotherapy. However, this conclusion is based on one identified clinical trial.",
+      "relevant_ids": [
+        26902850
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "abstract_id": 26902850,
+          "score": 0.7752,
+          "text": "was to detect a difference in the 42-day change in FACIT-F fatigue subscale between the 2 groups using a 2-sample Wilcoxon statistic. RESULTS: We enrolled 81 patients total (42 armodafinil and 39 placebo). Armodafinil did not significantly improve fatigue or QOL based on the 42-day change in FACIT-F fatigue subscale, FACT-G, CFS, or BFI. Further analysis suggests no difference between the arms even after accounting for the potential bias of missing data. Treatment was well tolerated with few grade 3 or 4 toxicities. CONCLUSIONS: While treatment was well-tolerated, an 8-week course of armodafinil did not improve fatigue or QOL in glioma patients undergoing RT in this pilot study. Further studies are needed to determine whether pharmacologic treatment improves fatigue in glioma patients undergoing RT."
+        },
+        {
+          "rank": 2,
+          "abstract_id": 26902850,
+          "score": 0.701,
+          "text": "BACKGROUND: Fatigue is common among glioma patients undergoing radiotherapy (RT) and impacts quality of life (QOL). We evaluated whether armodafinil, a wakefulness-promoting medication, improves fatigue in glioma patients undergoing RT. METHODS: Eligibility criteria included age \u226518 years, Karnofsky performance status \u226560, and grade 2-4 glioma undergoing RT to a total dose of 50-60 Gy. Patients were randomized 1:1 to armodafinil or placebo for 8 weeks beginning within 10 days of starting RT. Fatigue and QOL were assessed at baseline, day 22, day 43, and day 56 with the Functional Assessment of Chronic Illness Therapy - Fatigue (FACIT-F), the Functional Assessment of Cancer Therapy - General (FACT-G), the Brief Fatigue Inventory (BFI), and the Cancer Fatigue Scale (CFS). The primary aim was to detect a difference in the 42-day change in FACIT-F fatigue subscale between the 2 groups using a 2-sample Wilcoxon statistic. RESULTS: We enrolled 81 patients total (42 armodafinil"
+        },
+        {
+          "rank": 3,
+          "abstract_id": 16684437,
+          "score": 0.6689,
+          "text": "associated with statistically significant improvements in memory, attention, and fatigue (p < 0.05). The most common adverse events in patients receiving armodafinil were headache, nausea, and dizziness. CONCLUSIONS: Armodafinil significantly improved ability to sustain wakefulness throughout the day in patients with narcolepsy. Armodafinil also significantly improved overall clinical condition, memory, attention, and fatigue when compared with placebo."
+        },
+        {
+          "rank": 4,
+          "abstract_id": 17874255,
+          "score": 0.6493,
+          "text": "min with placebo (P < 0.0001). Compared with placebo, armodafinil significantly improved quality of episodic secondary memory (P < 0.05) and patients' ability to engage in activities of daily living (P < 0.0001) and reduced fatigue (P < 0.01). The most common adverse events were headache, nausea, and insomnia. Armodafinil did not adversely affect desired nighttime sleep, and nCPAP use remained high (approximately 7 h/night). Adjunct treatment with armodafinil significantly improved wakefulness, long-term memory, and patients' ability to engage in activities of daily living in nCPAP-adherent individuals with ES associated with OSA. Armodafinil also reduced patient-reported fatigue and was well tolerated."
+        },
+        {
+          "rank": 5,
+          "abstract_id": 16908126,
+          "score": 0.6234,
+          "text": "At final visit, mean (SD) MWT sleep latency increased from baseline by 2.3 (7.8) min with armodafinil and decreased by 1.3 (7.1) min in the placebo group (P=0.0003). Armodafinil improved clinical condition (CGI-C, 71% vs. 53% for armodafinil and placebo, respectively; P=0.0069). Armodafinil significantly improved episodic secondary memory (P=0.0102) and patient-estimated wakefulness (P<0.01) and reduced fatigue (P<0.05) compared with placebo. Armodafinil did not adversely affect nCPAP use. The most common adverse event associated with armodafinil was headache. Sleep macroarchitecture was not altered by armodafinil. CONCLUSION: Adjunct treatment with armodafinil significantly improved alertness, overall clinical condition, and long-term memory. Armodafinil also reduced fatigue and the impact of sleepiness on daily activities in patients with OSA/HS who have residual excessive sleepiness notwithstanding regular use of nCPAP. Armodafinil was well tolerated."
+        }
+      ],
+      "retrieval_hit_top5": true,
+      "generated_answer": "Yes, according to Passage [1], armodafinil did not significantly improve fatigue or QOL based on the 42-day change in FACIT-F fatigue subscale, FACT-G, CFS, or BFI in glioma patients undergoing RT.",
+      "citations": [
+        1
+      ],
+      "is_idk": false,
+      "rouge_l": 0.3175
+    },
+    {
+      "qid": 2645,
+      "question": "What is the biological role of Neddylation?",
+      "reference_answer": "NEDDylation is a post-translational protein modification that is tightly linked to ubiquitination and thereby protein degradation. It however has its own enzyme machinery. It is coupled to ubiquitination and is important for maintaining cellular homeostasis.",
+      "relevant_ids": [
+        26096160,
+        25655932,
+        29074978,
+        25918018,
+        27591266,
+        23148618,
+        25742093,
+        18793140,
+        26260793,
+        25349211,
+        25628956,
+        26437438,
+        23863900
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "abstract_id": 25918018,
+          "score": 0.5273,
+          "text": "mutant impairs NEDD8 conjugation to the E2 enzyme, which normally forms thioester bonds for further transferring NEDD8 to its ligases and substrates. Therefore, this mutation completely inhibits global protein neddylation, including neddylation of cullin family proteins, resulting in decreased activity of cullin-RING E3 ligases. This work sheds new light on the roles of NEDD8 lysines on neddylation cascades and provides a dominant negative mutant for the study of neddylation and its biological functions."
+        },
+        {
+          "rank": 2,
+          "abstract_id": 25628956,
+          "score": 0.5171,
+          "text": "Neddylation is a post-translational protein modification that conjugates a ubiquitin-like protein NEDD8 to target proteins. Similar to ubiquitination, neddylation is mediated by a cascade of three NEDD8 specific enzymes, an E1 activating enzyme, an E2 conjugating enzyme and one of the several E3 ligases. Neddylation is countered by the action of deneddylases via a process termed deneddylation. By altering the substrate's conformation, stability, subcellular localization or binding affinity to DNA or proteins, neddylation regulates diverse cellular processes including the ubiquitin-proteasome system-mediated protein degradation, protein transcription, cell signaling etc. Dysregulation of neddylation has been linked to cancer, neurodegenerative disorders, and more recently, cardiac disease. Here we comprehensively overview the biochemistry, the proteome and the biological function of neddylation. We also summarize the recent progress in revealing the physiological and pathological role of neddylation and deneddylation in the heart."
+        },
+        {
+          "rank": 3,
+          "abstract_id": 23863900,
+          "score": 0.4993,
+          "text": "cells in vitro and in vivo and human allogeneic T-cell responses in vitro. Mechanistic studies demonstrated that inhibition of neddylation reduced both canonical and noncanonical nuclear factor-\u03baB (NF-\u03baB) activity. Neddylation inhibition prevented the degradation of inhibitor-\u03baB and thus reduced the translocation and activation of NF-\u03baB, but without perturbation of the mitogen-activated protein kinase/extracellular signal-regulated kinase pathway. Thus, blocking neddylation could be a novel strategy for mitigating immune-mediated disease processes."
+        },
+        {
+          "rank": 4,
+          "abstract_id": 24058594,
+          "score": 0.4805,
+          "text": "invasion. Moreover, tyrosine phosphorylation of NEDD9 was significantly decreased via suppressing tyrosine phosphorylation of FAK or SRC, suggesting a positive feedback loop of tyrosine phosphorylation between NEDD9 and FAK or SRC. In addition, our data showed that silencing NEDD9 decreased Vimentin expression and increased E-cadherin expression in cervical cancer cells, and vice versa. E-cadherin was subject to regulation of NEDD9, FAK and SRC, but altered neither tyrosine-phosphorylated nor total NEDD9. Our findings suggest that NEDD9 is overexpressed in cervical cancer tissues and cells, and overexpressed NEDD9 promotes migration and invasion in cervical carcinoma cells, probably via a positive feedback loop of tyrosine phosphorylation between NEDD9 and FAK or SRC."
+        },
+        {
+          "rank": 5,
+          "abstract_id": 10531621,
+          "score": 0.4668,
+          "text": "the NH2 terminus. Although the function of this interaction, as such, is not well understood, it seems of potential biological interest within the more general context of the structural-functional role of triadin at the triadic junction in skeletal muscle."
+        }
+      ],
+      "retrieval_hit_top5": true,
+      "generated_answer": "The biological role of Neddylation involves the conjugation of a ubiquitin-like protein called NEDD8 to target proteins through a series of enzymatic reactions involving an E1 activating enzyme, an E2 conjugating enzyme, and one of several E3 ligases. This process plays crucial roles in various cellular processes, including:\n\n1. **Protein Degradation**: Neddylation can regulate the stability of certain proteins involved in the ubiquitin-proteasome system, thereby influencing protein turnover.\n   \n2. **Cell Signaling**: It affects the activity of signaling pathways, particularly those regulated by the NF-\u03baB complex, which is known to play significant roles in inflammation, immunity, and cell proliferation.\n\n3. **Cancer Development**: Dysregulation of neddylation has been implicated in various cancers, indicating its importance in tumor progression and metastasis.\n\n4. **Cardiac Disease**: There is evidence linking neddylation dysregulation to cardiovascular diseases, highlighting its critical role in maintaining normal cardiac function.\n\n5. **Immune Responses**: The inhibition of neddylation reduces the activity of NF-\u03baB, a key regulator of immune responses, potentially offering therapeutic targets for managing autoimmune and inflammatory conditions.\n\nIn summary, neddylation serves as a",
+      "citations": [],
+      "is_idk": false,
+      "rouge_l": 0.1221
+    },
+    {
+      "qid": 2300,
+      "question": "Which test is used to diagnose colour synesthesia?",
+      "reference_answer": "A standardized test battery for the study of synesthesia. We used synesthetic versions of the Stroop test with colored letters and numbers presented either in the right or the left visual field of thirty-four synesthetes. Assessment of the hemispheric lateralization of grapheme-color synesthesia with Stroop-type tests. ",
+      "relevant_ids": [
+        22512712,
+        23458658,
+        16919755,
+        25793307
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "abstract_id": 16919755,
+          "score": 0.6859,
+          "text": "of questions. Additionally, the tests that exist offer no means for data comparison. To remedy this deficit we have devised the Synesthesia Battery. This unified collection of tests is freely accessible online (http://www.synesthete.org). It consists of a questionnaire and several online software programs, and test results are immediately available for use by synesthetes and invited researchers. Performance on the tests is quantified with a standard scoring system. We introduce several novel tests here, and offer the software for running the tests. By presenting standardized procedures for testing and comparing subjects, this endeavor hopes to speed scientific progress in synesthesia research."
+        },
+        {
+          "rank": 2,
+          "abstract_id": 22512712,
+          "score": 0.6839,
+          "text": "This is a report on a case of color-taste synesthesia exhibited by an artist painter. This case is unique in that it is not common for color to appear as an inducer or taste as a concurrent. A comprehensive description of this particular case of synesthesia is provided first. The application and results of consistency, psychophysical, and Stroop tests are presented later. Finally, the difficulties encountered with the application of such tests are discussed."
+        },
+        {
+          "rank": 3,
+          "abstract_id": 16919755,
+          "score": 0.6565,
+          "text": "Synesthesia is an unusual condition in which stimulation of one modality evokes sensation or experience in another modality. Although discussed in the literature well over a century ago, synesthesia slipped out of the scientific spotlight for decades because of the difficulty in verifying and quantifying private perceptual experiences. In recent years, the study of synesthesia has enjoyed a renaissance due to the introduction of tests that demonstrate the reality of the condition, its automatic and involuntary nature, and its measurable perceptual consequences. However, while several research groups now study synesthesia, there is no single protocol for comparing, contrasting and pooling synesthetic subjects across these groups. There is no standard battery of tests, no quantifiable scoring system, and no standard phrasing of questions. Additionally, the tests that exist offer no means for data comparison. To remedy this deficit we have devised the Synesthesia Battery. This unified collection of tests is freely"
+        },
+        {
+          "rank": 4,
+          "abstract_id": 23458658,
+          "score": 0.6465,
+          "text": "The most commonly used method for formally assessing grapheme-colour synaesthesia (i.e., experiencing colours in response to letter and/or number stimuli) involves selecting colours from a large colour palette on several occasions and measuring consistency of the colours selected. However, the ability to diagnose synaesthesia using this method depends on several factors that have not been directly contrasted. These include the type of colour space used (e.g., RGB, HSV, CIELUV, CIELAB) and different measures of consistency (e.g., city block and Euclidean distance in colour space). This study aims to find the most reliable way of diagnosing grapheme-colour synaesthesia based on maximising sensitivity (i.e., ability of a test to identify true synaesthetes) and specificity (i.e., ability of a test to identify true non-synaesthetes). We show, applying ROC (receiver operating characteristics) to binary classification of a large sample of self-declared synaesthetes and non-synaesthetes, that the consistency criterion (i.e., cut-off value) for diagnosing synaesthesia"
+        },
+        {
+          "rank": 5,
+          "abstract_id": 23458658,
+          "score": 0.6408,
+          "text": "non-synaesthetes). We show, applying ROC (receiver operating characteristics) to binary classification of a large sample of self-declared synaesthetes and non-synaesthetes, that the consistency criterion (i.e., cut-off value) for diagnosing synaesthesia is considerably higher than the current standard in the field. We also show that methods based on perceptual CIELUV and CIELAB colour models (rather than RGB and HSV colour representations) and Euclidean distances offer an even greater sensitivity and specificity than most currently used measures. Together, these findings offer improved heuristics for the behavioural assessment of grapheme-colour synaesthesia."
+        }
+      ],
+      "retrieval_hit_top5": true,
+      "generated_answer": "The consistency criterion (i.e., cut-off value) for diagnosing synaesthesia is considerably higher than the current standard in the field.",
+      "citations": [],
+      "is_idk": false,
+      "rouge_l": 0.1429
+    },
+    {
+      "qid": 3609,
+      "question": "Which disease is Dasatinib used to treat?",
+      "reference_answer": "Patients with chronic myeloid leukemia",
+      "relevant_ids": [
+        27374826,
+        26951627,
+        24718698,
+        29121645,
+        26300669,
+        22068151,
+        28795321,
+        21828123,
+        29515069
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "abstract_id": 21828123,
+          "score": 0.6674,
+          "text": "patient who relapsed and in one patient in remission. Our results suggest that the characteristics of complete molecular response on dasatinib treatment may be similar to that achieved with imatinib, at least in patients with adverse disease features."
+        },
+        {
+          "rank": 2,
+          "abstract_id": 33085860,
+          "score": 0.6024,
+          "text": "A chemotherapy-free induction and consolidation first-line treatment with dasatinib and blinatumomab that was based on a targeted and immunotherapeutic strategy was associated with high incidences of molecular response and survival and few toxic effects of grade 3 or higher in adults with Ph-positive ALL. (Funded by Associazione Italiana per la Ricerca sul Cancro and others; GIMEMA LAL2116 D-ALBA EudraCT number, 2016-001083-11; ClinicalTrials.gov number, NCT02744768.)."
+        },
+        {
+          "rank": 3,
+          "abstract_id": 22461032,
+          "score": 0.597,
+          "text": "and C/MMR at 18 months were observed in 53, 53.1, and 57.8 % of patients, respectively. Among patients treated with second-line dasatinib or nilotinib, CHR was achieved at three months in 49 and 42 %, CCyR at 12 months in 32 and 23 %, and MMR at 18 months in 30.5 and 26.1 % of patients, respectively. Prognostic indicators of first-line response included age, race, and Sokal score. For second-line treatment, duration of first-line hematological response and choice of drug used were also significant."
+        },
+        {
+          "rank": 4,
+          "abstract_id": 29515069,
+          "score": 0.5945,
+          "text": "A 37-year-old woman was diagnosed with chronic phase chronic myeloid leukemia. Nilotinib treatment was initiated; however, it had to be discontinued due to an allergic reaction one month later, and dasatinib treatment was provided. Although favorable response was obtained, she started complaining of shortness of breath 7 months after initiating dasatinib treatment. Chest X-ray and echocardiography indicated pulmonary congestion and hypertension. Further, she was diagnosed with mixed connective tissue disease (MCTD) based on Raynaud phenomenon, swollen fingers, sclerodactyly, pancytopenia, hypocomplementemia, and positive anti-U1-RNP antibody. Consequently, dasatinib treatment was discontinued, and she was administered prednisolone (1 mg/kg/day), which was effective and successfully tapered with concomitant administration of cyclophosphamide. This is the first case of MCTD that developed during dasatinib treatment. However, because the present case was a young woman, the development of MCTD could probably be attributed to autoimmune diatheses or it may be a coincidence. However, the possibility of patients"
+        },
+        {
+          "rank": 5,
+          "abstract_id": 29515069,
+          "score": 0.5675,
+          "text": "because the present case was a young woman, the development of MCTD could probably be attributed to autoimmune diatheses or it may be a coincidence. However, the possibility of patients receiving dasatinib treatment developing autoimmune diseases needs to be assessed."
+        }
+      ],
+      "retrieval_hit_top5": true,
+      "generated_answer": "Based on the information provided in the passages, Dasatinib is primarily used to treat Chronic Myeloid Leukemia (CML). The relevant passage states:\n\n\"Dasatinib treatment was initiated; however, it had to be discontinued due to an allergic reaction one month later, and dasatinib treatment was provided.\"\n\nThis indicates that Dasatinib is being used as part of a treatment regimen for Chronic Phase Chronic Myeloid Leukemia.",
+      "citations": [],
+      "is_idk": false,
+      "rouge_l": 0.087
+    },
+    {
+      "qid": 850,
+      "question": "What is the sedimentation coefficient of the mammalian mitoribosome?",
+      "reference_answer": "The mammalian mitochondrial ribosome (mitoribosome) has a highly protein-rich composition with a small sedimentation coefficient of 55 S, consisting of 39 S large and 28 S small subunits.",
+      "relevant_ids": [
+        11943462,
+        6284743,
+        19567276,
+        14757048,
+        11402041,
+        15966747
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "abstract_id": 15966747,
+          "score": 0.5461,
+          "text": "In the present study, mitochondrial ribosomes of the nematode Ascaris suum were isolated and their physiochemical properties were compared to ribosomes of Escherichia coli. The sedimentation coefficient and buoyant density of A. suum mitochondrial ribosomes were determined. The sedimentation coefficient of the intact monosome was about 55 S. The buoyant density of formaldehyde-fixed ribosomes in cesium chloride was 1.40 g/cm(3), which suggests that the nematode mitoribosomes have a much higher protein composition than other mitoribosomes. The diffusion coefficients obtained from dynamic light scattering measurements were (1.48 +/- 0.04) x 10(-)(7) cm(2) s(-)(1) for 55 S mitoribosomes and (1.74 +/- 0.04) x 10(-)(7) cm(2) s(-)(1) for the 70 S E. coli monosome. The diameter of mitoribosomes was measured by dynamic light-scattering analysis and electron microscopy. Though the nematode mitoribosome has a larger size than the bacterial ribosome, it does not differ significantly in size from mammalian mitoribosomes."
+        },
+        {
+          "rank": 2,
+          "abstract_id": 11402041,
+          "score": 0.5227,
+          "text": "The mammalian mitochondrial ribosome (mitoribosome) has a highly protein-rich composition with a small sedimentation coefficient of 55 S, consisting of 39 S large and 28 S small subunits. In the previous study, we analyzed 39 S large subunit proteins from bovine mitoribosome (Suzuki, T., Terasaki, M., Takemoto-Hori, C., Hanada, T., Ueda, T., Wada, A., and Watanabe, K. (2001) J. Biol. Chem. 276, 21724-21736). The results suggested structural compensation for the rRNA deficit through proteins of increased molecular mass in the mitoribosome. We report here the identification of 28 S small subunit proteins. Each protein was separated by radical-free high-reducing two-dimensional polyacrylamide gel electrophoresis and analyzed by liquid chromatography/mass spectrometry/mass spectrometry using electrospray ionization/ion trap mass spectrometer to identify cDNA sequence by expressed sequence tag data base searches in silico. Twenty one proteins from the small subunit were identified, including 11 new proteins along with their complete cDNA sequences from human"
+        },
+        {
+          "rank": 3,
+          "abstract_id": 6284743,
+          "score": 0.5147,
+          "text": "The 55 S mammalian mitochondrial ribosome (referred to hereafter as \"mitoribosome\") is protein-rich, containing nearly twice as much protein as the Escherichia coli ribosome. In order to produce soluble mitochondrial proteins and protein-deficient subribosomal particles for use in functional and structural studies, the proteins of bovine mitoribosomes were extracted by washing in a series of buffers containing increasing concentrations of LiCl as the only chaotropic agent. LiCl disruption is used in order to preserve the solubilized proteins in a substantially \"native\" configuration. The extraction mixtures were characterized by sucrose density gradient analysis and the compositions of the stripped protein and residual pellet fractions were determined by two-dimensional polyacrylamide gel electrophoresis. In order to analyze the behavior or individual proteins, the intensity of Coomassie blue stain for each protein was normalized against the intensity of stain for the same protein in a control sample. Buffers with 1, 2, and 4 M"
+        },
+        {
+          "rank": 4,
+          "abstract_id": 6284743,
+          "score": 0.501,
+          "text": "intensity of Coomassie blue stain for each protein was normalized against the intensity of stain for the same protein in a control sample. Buffers with 1, 2, and 4 M LiCl each extract a specific subset of mitoribosomal proteins, while another group of proteins remains in the residual pellet fraction. Although very few proteins are detected in only one condition, most proteins are specifically enriched in one fraction. This LiCl procedure, therefore, produces fractionated groups of mitoribosomal proteins which can be used directly as a source for those proteins in which they are enriched, or they can be used as a starting point in further purification procedures. In contrast to results with E. coli ribosomes, several mitoribosomal proteins remain core-associated, indicating a different structural organization in these ribosomes."
+        },
+        {
+          "rank": 5,
+          "abstract_id": 11402041,
+          "score": 0.4482,
+          "text": "by expressed sequence tag data base searches in silico. Twenty one proteins from the small subunit were identified, including 11 new proteins along with their complete cDNA sequences from human and mouse. In addition to these proteins, three new proteins were also identified in the 55 S mitoribosome. We have clearly identified a mitochondrial homologue of S12, which is a key regulatory protein of translation fidelity and a candidate for the autosomal dominant deafness gene, DFNA4. The apoptosis-related protein DAP3 was found to be a component of the small subunit, indicating a new function for the mitoribosome in programmed cell death. In summary, we have mapped a total of 55 proteins from the 55 S mitoribosome on the two-dimensional polyacrylamide gels."
+        }
+      ],
+      "retrieval_hit_top5": true,
+      "generated_answer": "The sedimentation coefficient of the mammalian mitoribosome is 55 S.",
+      "citations": [],
+      "is_idk": false,
+      "rouge_l": 0.3077
+    },
+    {
+      "qid": 449,
+      "question": "What is situs inversus?",
+      "reference_answer": "Situs inversus totalis is a rare congenital anomaly with a complete mirror image of the thoracic and abdominal organs.",
+      "relevant_ids": [
+        25527777,
+        25884612,
+        26336554,
+        26043594,
+        26155468,
+        25296948,
+        26155517,
+        26087838
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "abstract_id": 25296948,
+          "score": 0.4575,
+          "text": "The authors reported a 73-year-old alcoholic man with previously-unrecognized situs inversus totalis suffering from left upper quadrant pain. Acute myocardial infarction was diagnosed and coronary angioplasty was performed immediately. However, the massive bleeding from the previously-unfound hepatomas caused hypovolemic shock and fatal outcome. Situs inversus totalis is a rare congenital anomaly with a complete mirror image of the thoracic and abdominal organs. Although being considered a benign entity, it would disturb diagnosis-making of the visceral diseases owing to the altered anatomy. To our knowledge, the coexistence of the coronary artery disease and ruptured hepatomas in situs inversus totalis, as in our patient, is never described. Recognition of any situs anomalies in time is the key to avoid misdiagnosis, inappropriate managements, and unwanted consequences."
+        },
+        {
+          "rank": 2,
+          "abstract_id": 26155517,
+          "score": 0.4154,
+          "text": "Situs inversus totalis is a rare congenital anomaly in which position of the heart and all abdominal viscera is reversed. Situs abnormalities usually go unnoticed but may be recognized by radiography or ultrasonography as an incidental finding or during evaluation for congenital heart diseases. We present such an extremely rare and to the best of our knowledge the third reported case of an injured spleen in the right hypochondrium, following seemingly trivial blunt trauma in a patient with situs inversus totalis who underwent splenectomy. The presence of associated congenital heart defects, visceral anatomical variations and mirror imaging makes the anaesthetic management as well as the surgical exercise a challenging one in such cases."
+        },
+        {
+          "rank": 3,
+          "abstract_id": 26155468,
+          "score": 0.3756,
+          "text": "situs inversus born at 32 wk of gestation by an alcoholic mother. Externally the child had agnathia and cyclopia. There was no mandible or any oral cavity. It was accompanied by noticeable limb deformity. Internally there was holoprosencephaly, situs inversus totalis with several visceral abnormalities. To the best of our knowledge this is the first case of agnathia, holoprosencephaly and situs inversus complex to be reported in an indexed literature from India. This report also strengthens the association of maternal alcoholism with occurrence of holoprosencephaly."
+        },
+        {
+          "rank": 4,
+          "abstract_id": 17361376,
+          "score": 0.3719,
+          "text": "and retropharyngeal abscess. CONCLUSION: CT is the gold standard in identifying crowned dens syndrome, as it is able to depict the shape and site of calcification and any bone erosions. Radiography of other joints (wrist, knee, pubic symphysis) may help to ascertain whether the disease is due to calcium pyrophosphate dihydrate or hydroxyapatite crystals, and is therefore recommended for routine patient management. Magnetic resonance imaging (MRI) is indicated for the study of neurological complications."
+        },
+        {
+          "rank": 5,
+          "abstract_id": 28447963,
+          "score": 0.3413,
+          "text": "of CTS. The aim of this letter is aware the physicians in order to borne in mind the possible presence of a median nerve variation during dissection of carpal tunnel in order to avoid the damage of this non common anatomical structures."
+        }
+      ],
+      "retrieval_hit_top5": true,
+      "generated_answer": "Situs inversus refers to a rare congenital anomaly where the position of the heart and all abdominal viscera is reversed compared to normal anatomy.",
+      "citations": [],
+      "is_idk": false,
+      "rouge_l": 0.4651
+    },
+    {
+      "qid": 2449,
+      "question": "Is cilengitide effective for treatment of glioblastoma?",
+      "reference_answer": "No, cilengitide does not improve survival of glioblastoma (GBM) patients. Cilengitide is a cyclic pentapeptide that demonstrated efficacy for GBM treatment by targeting the integrins av\u03b23 and av\u03b25 over-expressed on GBM cells. However, randomized phase III CENTRIC and phase II CORE trials explored failed to meet their primary endpoints. However, in CORE, higher \u03b1v\u03b23 levels in tumor cells were associated with improved progression-free survival by central review and with improved overall survival in patients treated with cilengitide. Analysis of randomized clinical trials of antiangiogenic drugs (including cilengitide) showed no improvement in overall survival and a trend for an inferior outcome, in terms of overall survival, in patients receiving antiangiogenic drug alone compared to cytotoxic drug alone.",
+      "relevant_ids": [
+        28514722,
+        25163906,
+        28259301,
+        28643756,
+        26717039,
+        24442484,
+        26918452,
+        27296952,
+        26935578,
+        26792571
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "abstract_id": 21739168,
+          "score": 0.8652,
+          "text": "were evaluable for efficacy. The 6-month progression free survival rate was 12%. Cilengitide was detected in all tumor specimens with higher levels in the group receiving 2000 mg dosing while corresponding plasma concentrations were low, often below the lower limit of detection. These results confirm drug delivery and possibly retention in tumor. This study provides evidence that with established dosing, cilengitide is adequately delivered to the tumor, although as a single agent, efficacy in recurrent glioblastoma is modest. However, these results demonstrating drug delivery to tumor do support continued investigation of this agent as preliminary results from recent studies combining cilengitide with cytotoxic therapies are promising."
+        },
+        {
+          "rank": 2,
+          "abstract_id": 21739168,
+          "score": 0.8504,
+          "text": "Cilengitide is a cyclic pentapeptide that is a specific inhibitor of the \u03b1v\u03b23 and \u03b1v\u03b25 integrins. Preclinical studies demonstrate antiangiogenic activity and anti-invasive activity in a number of glioma models. This study was designed to evaluate the efficacy and tumor delivery of cilengitide in patients with recurrent glioblastoma. Patients with recurrent glioblastoma who require a surgical resection for optimal clinical care received 3 intravenous doses of cilengitide at either 500 or 2000 mg (day -8, -4, -1) prior to undergoing tumor resection with corresponding blood samples for plasma to tumor comparisons. After recovery from surgery, patients were treated with cilengitide (2000 mg i.v. twice weekly, maximum of 2 years of treatment). The study accrued 30 patients with recurrent glioblastoma, 26 were evaluable for efficacy. The 6-month progression free survival rate was 12%. Cilengitide was detected in all tumor specimens with higher levels in the group receiving 2000 mg dosing while"
+        },
+        {
+          "rank": 3,
+          "abstract_id": 18981465,
+          "score": 0.7916,
+          "text": "PURPOSE: Cilengitide, an inhibitor of alphavbeta3 and alphavbeta5 integrin receptors, demonstrated minimal toxicity and durable activity across a wide range of doses administered to adults with recurrent glioblastoma multiforme (GBM) in a prior phase I study. The current multicenter phase II study was conducted to evaluate the activity and safety of cilengitide in GBM patients at first recurrence. PATIENTS AND METHODS: Eligible patients were randomly assigned to receive either 500 or 2,000 mg of cilengitide twice weekly on a continuous basis. Patients were assessed every 4 weeks. The primary end point was 6-month progression-free survival (PFS) rate. Secondary end points included PFS, overall survival (OS), and radiographic response, as well as quality-of-life and pharmacokinetic assessments. RESULTS: Eighty-one patients were enrolled, including 41 on the 500-mg arm and 40 on the 2,000-mg arm. The safety profile of cilengitide was excellent, with no significant reproducible toxicities observed on either arm. Antitumor activity"
+        },
+        {
+          "rank": 4,
+          "abstract_id": 25163906,
+          "score": 0.7779,
+          "text": "BACKGROUND: Cilengitide is a selective \u03b1v\u03b23 and \u03b1v\u03b25 integrin inhibitor. Data from phase 2 trials suggest that it has antitumour activity as a single agent in recurrent glioblastoma and in combination with standard temozolomide chemoradiotherapy in newly diagnosed glioblastoma (particularly in tumours with methylated MGMT promoter). We aimed to assess cilengitide combined with temozolomide chemoradiotherapy in patients with newly diagnosed glioblastoma with methylated MGMT promoter. METHODS: In this multicentre, open-label, phase 3 study, we investigated the efficacy of cilengitide in patients from 146 study sites in 25 countries. Eligible patients (newly diagnosed, histologically proven supratentorial glioblastoma, methylated MGMT promoter, and age \u226518 years) were stratified for prognostic Radiation Therapy Oncology Group recursive partitioning analysis class and geographic region and centrally randomised in a 1:1 ratio with interactive voice response system to receive temozolomide chemoradiotherapy with cilengitide 2000 mg intravenously twice weekly (cilengitide group) or temozolomide chemoradiotherapy alone (control group). Patients"
+        },
+        {
+          "rank": 5,
+          "abstract_id": 22413865,
+          "score": 0.7768,
+          "text": "anti-integrin-based approaches, for example, cilengitide, represent alternative strategies. EXPERT OPINION: Enzastaurin and cediranib failed in randomized Phase III trials in recurrent glioblastoma, aflibercept in Phase II. By contrast, bevacizumab was conditionally approved in many countries. Recently completed Phase III trials for bevacizumab and cilengitide in the first-line setting will define the future role of these agents. This intense clinical trial activity reflects the hope that antiangiogenic agents will become part of the limited therapeutic options for glioblastoma."
+        }
+      ],
+      "retrieval_hit_top5": true,
+      "generated_answer": "Yes, cilengitide is effective for treatment of glioblastoma. [1], [2]",
+      "citations": [
+        1,
+        2
+      ],
+      "is_idk": false,
+      "rouge_l": 0.0763
+    },
+    {
+      "qid": 2347,
+      "question": "Do bacteria from the genus Morexella cause respiratory infections?",
+      "reference_answer": "Bacteria from the genus Morexella can cause respiratory infections",
+      "relevant_ids": [
+        24786571,
+        8007629
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "abstract_id": 24786571,
+          "score": 0.5675,
+          "text": "pneumoniae (ATCC 13883) and Morexella cattarhalis (ATCC 14468)] using the minimum inhibitory concentration (MIC) method. Two additional faster growing Mycobacterium strains [Mycobacterium smegmatis (ATCC 23246) and Mycobacterium aurum (NCTC 10437)] were included in the assay as predictive test organisms for the more pathogenic strain Mycobacterium tuberculosis. RESULTS: Some plant species, such as Alchornea floribunda, Musanga cecropioides (both leaves and stem bark), Tetracera potatoria and Xylopia aethiopica (stem bark), were effective in inhibiting Morexella cattarhalis, having MIC values between 65 and 250 \u03bcg/mL. Some noteworthy antimycobacterial inhibition (MIC\u2264200 \u03bcg/mL and as low as MIC 6.5 \u00b5g/mL) for 54% of the extracts were observed. CONCLUSION: While moderate activity was shown for pathogens causing respiratory tract infections, these plant species seems to be selectively targeting Mycobacteria spp. suggesting that the traditional use for treating tuberculosis related symptoms may be indeed be accurate."
+        },
+        {
+          "rank": 2,
+          "abstract_id": 24669633,
+          "score": 0.5606,
+          "text": "in terms of frequencies and percentage. RESULTS: Out of 130 culture proven cases of neonatal sepsis, gram negative bacteria were found in 71 (54.6%) cases and gram positive bacteria in 59 (45.4%) cases. Staphylococcus aureus was the most common bacteria found in 35 (26.9%) cases followed by Escherichia coli in 30 (23.1%) cases. Acinetobacter species, Staphylococcus epidermidis, Klebseila, Streptococci, Enterobacter cloacae and Morexella species were found in 17 (13.1%), 17 (13.1%), 13 (10%), 7 (5.4%), 6 (4.6%), and 5 (3.8%) cases respectively. In most of the cases causative organisms were found to be resistant to commonly used antibiotics like ampicillin, amoxicillin, cefotaxime, and ceftriaxone (77.7%, 81.5%, 63.1%, and 66.9% respectively). There was comparatively less (56.9%) resistance to ceftazidime. Gentamicin had resistance in 55.1% cases, while amikacin and tobramycin had relatively less resistance (17.4% and 34.8% cases respectively). Quinolones and imipenem had relatively less resistance. Vancomycin was found to be effective"
+        },
+        {
+          "rank": 3,
+          "abstract_id": 10525005,
+          "score": 0.5527,
+          "text": "Author information: (1)Department of Microbiology and Infectious Diseases, The Alfred Hospital, Prahran, Victoria 3181, Australia."
+        },
+        {
+          "rank": 4,
+          "abstract_id": 8007629,
+          "score": 0.5386,
+          "text": "The efficacy and safety of oral ofloxacin, 400 mg once daily, for the treatment of patients with lower respiratory tract infections were studied. The most common species recovered from the sputum specimens of these patients were Haemophilus influenzae, followed by Streptococcus pneumoniae (S. pneumoniae), Staphylococcus aureus (S. aureus), Gram positive cocci unidentified, Pseudomonas aeruginosa (P. aeruginosa), Morexella catarrhalis, Streptococcus epidermidis, and another Haemophilus species in this order. All these bacteria were susceptible to ofloxacin except for one strain of methicillin resistant S. aureus. A satisfactory clinical outcome was achieved in 34 of 40 patients (85%). It is concluded that ofloxacin, 400 mg once daily, is useful for patients with respiratory tract infections."
+        },
+        {
+          "rank": 5,
+          "abstract_id": 27044893,
+          "score": 0.5209,
+          "text": "Author information: (1)Section of Microbiology, Medical Rresearch Council Centre for Molecular Bacteriology and Infection, Imperial College London, London SW7 2AZ, England, UK. (2)Section of Microbiology, Medical Rresearch Council Centre for Molecular Bacteriology and Infection, Imperial College London, London SW7 2AZ, England, UK s.mostowy@imperial.ac.uk."
+        }
+      ],
+      "retrieval_hit_top5": true,
+      "generated_answer": "Based on the given passages, it can be inferred that yes, bacteria from the genus Morexella are known to cause respiratory infections. This conclusion is drawn from Passage [1], which discusses the effectiveness of certain plants in inhibiting Morexella cattarhalis, a bacterium associated with respiratory tract infections. Additionally, Passage [4] mentions that ofloxacin, an antibiotic, has been tested for its efficacy against bacterial species including those from the genus Morexella, indicating their potential role in respiratory infections.",
+      "citations": [
+        1,
+        4
+      ],
+      "is_idk": false,
+      "rouge_l": 0.186
+    },
+    {
+      "qid": 3417,
+      "question": "Which disease is ZP-PTH used for?",
+      "reference_answer": "ZP-PTH is used for the treatment of osteoporosis.",
+      "relevant_ids": [
+        20567999
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "abstract_id": 20567999,
+          "score": 0.5879,
+          "text": "all patch doses and comparable to injection. All patch doses produced a significant increase in spine bone mineral density. Unexpectedly, ZP-PTH also produced an early increase in hip bone mineral density, an effect not observed with the injection. CONCLUSIONS: These studies suggest that this novel ZP-PTH patch system can deliver a consistent and therapeutically relevant PTH PK profile. Based on encouraging Phase 2 safety and efficacy data, the program is advancing into a pivotal Phase 3 clinical study."
+        },
+        {
+          "rank": 2,
+          "abstract_id": 15481748,
+          "score": 0.5147,
+          "text": "patients was reduced, but this was not statistically significant. These biochemical observations, especially those of the antioxidant micronuent zinc, may serve as a basis for the differentiaion of the sometimes clinically inseparable disorders of Blount's and rckets and may aid in early differential diagnosis, appropriate treatment as well as prevention of complications."
+        },
+        {
+          "rank": 3,
+          "abstract_id": 20567999,
+          "score": 0.512,
+          "text": "OBJECTIVES: To evaluate the clinical PK/PD of PTH(1-34) delivered by a novel transdermal drug-coated microneedle patch system (ZP-PTH) for the treatment of osteoporosis. METHODS: Phase 1 PK studies evaluated the effect of site of administration, patch wear time and dose in normal volunteers, ages 40-85 yrs. Phase 2 was conducted in post-menopausal women with osteoporosis to determine the patch dose response compared to placebo patch and FORTEO\u00ae injection. RESULTS: Phase 1 ZP-PTH patch delivery demonstrated a rapid PTH plasma pulse profile with T(max) 3 times shorter and apparent T(1/2) 2 times shorter than FORTEO\u00ae. In Phase 2, ZP-PTH 20, 30 and 40 \u00b5g doses showed a proportional increase in plasma PTH AUC. Inter-subject and intra-subject AUC variability was similar for all patch doses and comparable to injection. All patch doses produced a significant increase in spine bone mineral density. Unexpectedly, ZP-PTH also produced an early increase in hip bone mineral"
+        },
+        {
+          "rank": 4,
+          "abstract_id": 24195179,
+          "score": 0.4858,
+          "text": "(95% confidence interval 1.02-3.03), P = 0.043 respectively. TSH abnormalities were not associated with an increased incidence in appropriate or inappropriate ICD therapy. CONCLUSION: A low or high TSH was associated with a higher mortality; however, neither were associated with appropriate or inappropriate ICD therapy after multivariate analysis. Univariate analysis demonstrated an association of high TSH and appropriate ICD therapy. However, multivariate analysis did not show this association. Therefore, we are concluding that TSH levels are predictors of all-cause mortality but not ICD therapy."
+        },
+        {
+          "rank": 5,
+          "abstract_id": 22142744,
+          "score": 0.4762,
+          "text": "with Bartter's syndrome. Some authors postulate that these cases were probably due to Gitelman's syndrome and not due to Bartter's syndrome as all patients had hypomagnesaemia. This electrolyte disorder seems to induce CCP crystal deposition. To date, no cases of CPPD have been reported in patients who had Bartter's syndrome without hypomagnesaemia. CPPD may be found in other conditions associated with hypomagnesaemia, such as short bowel syndrome or tacrolimus therapy in liver transplantation patients. As acute CPP crystal arthropathy or pseudogout can be the onset presentation of Gitelman's syndrome, CPPD should be considered a major feature of this disease. Rheumatologists should be aware of the association between Gitelman's syndrome and CPPD, and should consider this metabolic disorder when CPPD occurs in younger patients."
+        }
+      ],
+      "retrieval_hit_top5": true,
+      "generated_answer": "Based on the information provided in passage [1], ZP-PTH is used for treating osteoporosis.",
+      "citations": [
+        1
+      ],
+      "is_idk": false,
+      "rouge_l": 0.5
+    },
+    {
+      "qid": 2417,
+      "question": "Which siRNA based drug is in clinical trials for the treatment of pancreatic cancer?",
+      "reference_answer": "siG12D-LODERTM has been tested in a phase 1/2a clinical trial of patients with pancreatic cancer.",
+      "relevant_ids": [
+        27147553,
+        26009994
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "abstract_id": 26009994,
+          "score": 0.7111,
+          "text": "PURPOSE: The miniature biodegradable implant siG12D-LODER\u2122 was inserted into a tumor and released a siRNA drug against KRAS(G12D) along four months. This novel siRNA based drug was studied, in combination with chemotherapy, as targeted therapy for Locally Advanced Pancreatic Cancer (LAPC). METHODS: An open-label Phase 1/2a study in the first-line setting of patients with non-operable LAPC was initiated. In this study patients were assigned to receive a single dose of siG12D-LODERs, in three escalating dose cohorts (0.025mg, 0.75mg and 3.0mg). Gemcitabine was given on a weekly basis, following the siG12D-LODERTM insertion, until disease progression. The recommended dose was further examined with modified FOLFIRINOX. The follow up period was eight weeks and survival until death. RESULTS: Fifteen patients with LAPC were enrolled. Among the 15 treated patients, the most frequent adverse events observed were grade 1or 2 in severity (89%); five patients experienced serious adverse events (SAEs). In 12 patients analyzed"
+        },
+        {
+          "rank": 2,
+          "abstract_id": 32311310,
+          "score": 0.6166,
+          "text": "after its subcutaneous administration in mice. Despite the lack of a delivery agent-free antitumor effect, we anticipate our study to be a starting point to develop alternative siRNA scaffolds that can be degraded into naturally-occurring metabolites and help alleviate the aforementioned challenges. Furthermore, Lin28B is a promising target for cancers, and the development of such simplified siRNA analogs, possibly together with novel targeting units, holds potential."
+        },
+        {
+          "rank": 3,
+          "abstract_id": 32561705,
+          "score": 0.6079,
+          "text": "RNA interference (RNAi) is an ancient biological mechanism used to defend against external invasion. It theoretically can silence any disease-related genes in a sequence-specific manner, making small interfering RNA (siRNA) a promising therapeutic modality. After a two-decade journey from its discovery, two approvals of siRNA therapeutics, ONPATTRO\u00ae (patisiran) and GIVLAARI\u2122 (givosiran), have been achieved by Alnylam Pharmaceuticals. Reviewing the long-term pharmaceutical history of human beings, siRNA therapy currently has set up an extraordinary milestone, as it has already changed and will continue to change the treatment and management of human diseases. It can be administered quarterly, even twice-yearly, to achieve therapeutic effects, which is not the case for small molecules and antibodies. The drug development process was extremely hard, aiming to surmount complex obstacles, such as how to efficiently and safely deliver siRNAs to desired tissues and cells and how to enhance the performance of siRNAs with respect to their"
+        },
+        {
+          "rank": 4,
+          "abstract_id": 12757409,
+          "score": 0.6002,
+          "text": "Biotech has also conducted a phase III placebo-controlled study of marimastat as monotherapy in patients with inoperable gastric cancer at 37 centres throughout Europe. Results from this trial indicated that it did not achieve its primary endpoint of a statistically significant survival benefit over placebo. However, data collected during the follow-up period have shown increases in survival benefit in the treatment group in addition to a significant improvement in disease-free progression, the secondary endpoint of the trial. Development of marimastat for this indication is ongoing. In May 2001, British Biotech reported data from an interim analysis of results from the remaining phase III study in pancreatic cancer (study 183) that showed no patient benefit for marimastat recipients compared with gemcitabine. However, these results did not meet stopping criteria and the study continues under the guidance of Schering-Plough. The multicentre trials are being conducted in the US, Canada and the European"
+        },
+        {
+          "rank": 5,
+          "abstract_id": 32561705,
+          "score": 0.5957,
+          "text": "to surmount complex obstacles, such as how to efficiently and safely deliver siRNAs to desired tissues and cells and how to enhance the performance of siRNAs with respect to their activity, stability, specificity and potential off-target effects. In this review, the evolution of siRNA chemical modifications and their biomedical performance are comprehensively reviewed. All clinically explored and commercialized siRNA delivery platforms, including the GalNAc (N-acetylgalactosamine)-siRNA conjugate, and their fundamental design principles are thoroughly discussed. The latest progress in siRNA therapeutic development is also summarized. This review provides a comprehensive view and roadmap for general readers working in the field."
+        }
+      ],
+      "retrieval_hit_top5": true,
+      "generated_answer": "Based on the information provided in passage [1], the siRNA-based drug siG12D-LODER\u2122 is in clinical trials for the treatment of locally advanced pancreatic cancer (LAPC). Specifically, it states:\n\n\"In this study patients were assigned to receive a single dose of siG12D-LODERs, in three escalating dose cohorts (0.025mg, 0.75mg and 3.0mg).\"",
+      "citations": [
+        1
+      ],
+      "is_idk": false,
+      "rouge_l": 0.1918
+    },
+    {
+      "qid": 714,
+      "question": "Which proteins are involved in actin bundling and filopodia formation and function?",
+      "reference_answer": "A number of proteins have been found to regulate F-actin bundling and enhance filopodia formation and motility. Among these are Cysteine-rich protein 1 (CRP1), Fascin, Macrophage actin-associated tyrosine phosphorylated protein (MAYP/PSTPIP2), Insulin receptor tyrosine kinase substrate p53 (IRSp53), Missing in metastasis protein (MIM), Eps8, Diaphanous-related formin (dDia2) and Vasodilator-stimulated phosphoprotein (VASP).",
+      "relevant_ids": [
+        20137952,
+        16675552,
+        19228738,
+        11169763,
+        21283078,
+        22090504,
+        18835624,
+        14752106,
+        14532112,
+        17115031,
+        15788569
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "abstract_id": 11169763,
+          "score": 0.7226,
+          "text": "Growth cones at the distal tips of growing nerve axons contain bundles of actin filaments distributed throughout the lamellipodium and that project into filopodia. The regulation of actin bundling by specific actin binding proteins is likely to play an important role in many growth cone behaviors. Although the actin binding protein, fascin, has been localized in growth cones, little information is available on its functional significance. We used the large growth cones of the snail Helisoma to determine whether fascin was involved in temporal changes in actin filaments during growth cone morphogenesis. Fascin localized to radially oriented actin bundles in lamellipodia (ribs) and filopodia. Using a fascin antibody and a GFP fascin construct, we found that fascin incorporated into actin bundles from the beginning of growth cone formation at the cut end of axons. Fascin associated with most of the actin bundle except the proximal 6--12% adjacent to the central"
+        },
+        {
+          "rank": 2,
+          "abstract_id": 14752106,
+          "score": 0.7211,
+          "text": "homology to any known actin interacting proteins. The IMD alone, derived from either IRSp53 or MIM, induced filopodia in HeLa cells and the formation of tightly packed parallel F-actin bundles in vitro. These results suggest that IRSp53 and MIM belong to a novel actin bundling protein family. Furthermore, we found that filopodium-inducing IMD activity in the full-length IRSp53 was regulated by active Cdc42 and Rac1. The SH3 domain was not necessary for IMD-induced filopodium formation. Our results indicate that IRSp53, when activated by small GTPases, participates in F-actin reorganization not only in an SH3-dependent manner but also in a manner dependent on the activity of the IMD."
+        },
+        {
+          "rank": 3,
+          "abstract_id": 20869367,
+          "score": 0.6701,
+          "text": "microscopy after negative staining. Analytical ultracentrifugation showed that core FH2 domains of mDia1 and mDia2 exhibited a low degree of dimer formation, whereas mDia3-FH2 minus connector and mDia1-FH2 plus connector readily dimerized. Only core mDia3-FH2 was able to nucleate actin polymerization. However, all tested core FH2 domains decorated and bundled F-actin, as demonstrated by electron microscopy after negative staining. Bundling activity was highest for mDia3-FH2, decreased for mDia2-FH2, and further decreased for mDia1-FH2. The mDia1-FH2 domain plus connector induced actin polymerization also in the absence of profilin, but failed to induce F-actin deformation and bundling. We also tested whether mDia1-FH2 was able to repolymerize actin in complex with different proteins that stabilize globular actin. The data obtained demonstrated that mDia1-FH2 induced actin repolymerization only from the actin/cofilin-1 complex, but not when complexed to actin depolymerizing factor, gelsolin segment 1, vitamin D binding protein, or deoxyribonuclease I."
+        },
+        {
+          "rank": 4,
+          "abstract_id": 16675552,
+          "score": 0.6673,
+          "text": "ends. Together with the finding that DdVASP binds to the FH2 domain of dDia2, these data indicate that the crucial role of VASP in filopodium formation is different from uncapping of actin filaments. To identify the activity of DdVASP required in this process, rescue experiments of DdVASP-null cells with mutant DdVASP constructs were performed. Only WT DdVASP, but not a mutant lacking the F-actin bundling activity, could rescue the ability of these cells to form WT-like filopodia. Our data suggest that DdVASP is complexed with dDia2 in filopodial tips and support formin-mediated filament elongation by bundling nascent actin filaments."
+        },
+        {
+          "rank": 5,
+          "abstract_id": 25664996,
+          "score": 0.6619,
+          "text": "Actin is a major actor in the determination of cell shape. On the one hand, site-directed assembly/disassembly cycles of actin filaments drive protrusive force leading to lamellipodia and filopodia dynamics. Force produced by actin similarly contributes in membrane scission in endocytosis or Golgi remodeling. On the other hand, cellular processes like adhesion, immune synapse, cortex dynamics or cytokinesis are achieved by combining acto-myosin contractility and actin assembly in a complex and not fully understood manner. New chemical compounds are therefore needed to disentangle acto-myosin and actin dynamics. We have found that synthetic, cell permeant, short polyamines are promising new actin regulators in this context. They generate growth and stabilization of lamellipodia within minutes by slowing down the actin assembly/disassembly cycle and facilitating nucleation. We now report that these polyamines also slow down cytokinetic ring closure in fission yeast. This shows that these synthetic compounds are active also in yeasts, and"
+        }
+      ],
+      "retrieval_hit_top5": true,
+      "generated_answer": "Based on the provided passages, several proteins are involved in actin bundling and filopodia formation:\n\n1. **Fascin**: Localizes to radially oriented actin bundles in lamellipodia and filopodia.\n2. **IRSp53/MIM**: Induces filopodia in HeLa cells and forms tight-packed parallel F-actin bundles in vitro.\n3. **mDia1/FH2 domains**: Exhibits low degree of dimer formation; core mDia3-FH2 dimerizes and induces actin polymerization.\n4. **DdVASP**: Complexes with dDia2 and is essential for filopodium formation; supports formin-mediated filament elongation by bundling nascent actin filaments.\n5. **Polyamines**: Synthetic compounds that stabilize lamellipodia and delay cytokinetic ring closure in fission yeast, suggesting their potential use as actin regulators.",
+      "citations": [],
+      "is_idk": false,
+      "rouge_l": 0.1595
+    },
+    {
+      "qid": 2147,
+      "question": "What is MPE-seq?",
+      "reference_answer": "MPE-seq (methidiumpropyl-EDTA sequencing) is a new method for the genome-wide characterization of chromatin that involves the digestion of nuclei with MPE-Fe(II) followed by massively parallel sequencing. Like micrococcal nuclease (MNase), MPE-Fe(II) preferentially cleaves the linker DNA between nucleosomes. However, there are differences in the cleavage of nuclear chromatin by MPE-Fe(II) relative to MNase. MPE-seq provides a unique and straightforward means for the genome-wide analysis of chromatin structure with minimal DNA sequence bias. In particular, the combined use of MPE-seq and MNase-seq enables the identification of noncanonical chromatin structures that are likely to be important for the regulation of gene expression.",
+      "relevant_ids": [
+        26080409
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "abstract_id": 26776207,
+          "score": 0.3736,
+          "text": "can serve as surrogates for experimental gold standard dataset. In this work, we also show how Cseq-Simulator can be used to perform a comparison of steps of typical CLIP-Seq analysis pipelines, such as the read alignment or the peak calling. These comparisons show which tools are useful in different settings and also allow identifying pitfalls in the data analysis."
+        },
+        {
+          "rank": 2,
+          "abstract_id": 27280887,
+          "score": 0.3616,
+          "text": "diagnostic plots that help to tune the model parameters. It gives access to the main parameters of DESeq2 and edgeR and prevents untrained users from misusing some functionalities of both packages. By keeping track of all the parameters of the analysis process it fits the requirements of reproducible research."
+        },
+        {
+          "rank": 3,
+          "abstract_id": 21816040,
+          "score": 0.3604,
+          "text": "splice forms for each gene. CONCLUSIONS: RSEM is an accurate and user-friendly software tool for quantifying transcript abundances from RNA-Seq data. As it does not rely on the existence of a reference genome, it is particularly useful for quantification with de novo transcriptome assemblies. In addition, RSEM has enabled valuable guidance for cost-efficient design of quantification experiments with RNA-Seq, which is currently relatively expensive."
+        },
+        {
+          "rank": 4,
+          "abstract_id": 26080409,
+          "score": 0.3469,
+          "text": "in part, to noncanonical chromatin structures such as labile nucleosome-like particles that have been observed in other contexts. The subnucleosome-sized MPE-seq peaks exhibit a particularly distinct association with active promoters. In addition, unlike MNase, MPE-Fe(II) cleaves nuclear DNA with little sequence bias. In this regard, we found that DNA sequences at RNA splice sites are hypersensitive to digestion by MNase but not by MPE-Fe(II). This phenomenon may have affected the analysis of nucleosome occupancy over exons. These findings collectively indicate that MPE-seq provides a unique and straightforward means for the genome-wide analysis of chromatin structure with minimal DNA sequence bias. In particular, the combined use of MPE-seq and MNase-seq enables the identification of noncanonical chromatin structures that are likely to be important for the regulation of gene expression."
+        },
+        {
+          "rank": 5,
+          "abstract_id": 30168903,
+          "score": 0.3247,
+          "text": "for researchers lacking command-line experience. Here, we describe two new RNA-seq analysis protocols, in which all tools are deployed on CyVerse Cyberinfrastructure with user-friendly graphical user interfaces, and validate their performance using plant RNA-seq data. \u00a9 2018 by John Wiley & Sons, Inc."
+        }
+      ],
+      "retrieval_hit_top5": true,
+      "generated_answer": "MPE-seq is described as providing a unique and straightforward means for the genome-wide analysis of chromatin structure with minimal DNA sequence bias. Specifically, it enables the identification of noncanonical chromatin structures that are likely to be important for the regulation of gene expression.",
+      "citations": [],
+      "is_idk": false,
+      "rouge_l": 0.519
+    },
+    {
+      "qid": 3825,
+      "question": "List types of mutations.",
+      "reference_answer": "point mutations\ndeletions\ninsertions\ninversions\ntranslocations",
+      "relevant_ids": [
+        29115104,
+        29878242,
+        27722982
+      ],
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "abstract_id": 28241736,
+          "score": 0.6451,
+          "text": "straightforward solution for evaluating any list of expected mutations like hotspot mutations, or even whole regions of interest. In addition to an ordinary textual report, BBCAnalyzer reports highly customizable plots. Information on the counted number of bases, the reference bases, known mutations or polymorphisms, called mutations and base qualities is summarized in a single plot. By uniting this information in a graphical way, the user may easily decide on a variant being present or not - completely independent of any internal filters or frequency thresholds. CONCLUSIONS: BBCAnalyzer provides a unique, novel approach to facilitate variant calling where classical tools frequently fail to call. The R package is freely available at http://bioconductor.org . The local web application is available at Additional file 2. A documentation of the R package (Additional file 1) as well as the web application (Additional file 2) with detailed descriptions, examples of all input- and output elements,"
+        },
+        {
+          "rank": 2,
+          "abstract_id": 18781615,
+          "score": 0.6133,
+          "text": "and background genomic information. Phenotypic data are accessed by selecting a particular mutation. The database includes 219 unique variants of which 86 are disease-causing mutations. The database will be supplemented with other DBA genes as soon as they are reported and their mutations are identified and it should be of assistance to clinicians and investigators involved in DBA research and care."
+        },
+        {
+          "rank": 3,
+          "abstract_id": 10796876,
+          "score": 0.6027,
+          "text": "To determine whether allele-product instability could explain failure to identify some mutations, we analyzed polymorphic variants in the COL5A1 gene in 16 individuals, and we examined mRNA for the expression of both alleles and for alterations in splicing. We found a splice-site mutation in a single individual, and we determined that, in six individuals, the mRNA from one COL5A1 allele either was not expressed or was very unstable. We identified small insertions or deletions in five of these cell strains, but we could not identify the mutation in the sixth individual. Thus, although as many as one-half of the mutations that give rise to EDS types I and II are likely to lie in the COL5A1 gene, a significant portion of them result in very low levels of mRNA from the mutant allele, as a consequence of nonsense-mediated mRNA decay."
+        },
+        {
+          "rank": 4,
+          "abstract_id": 21694444,
+          "score": 0.5968,
+          "text": "investigated by the LHON biochip, direct sequencing and pyrosequencing, respectively. The biochip was found to be able efficiently to discriminate homoplasmic and heteroplasmic mtDNA mutations in LHON. Biochip analysis revealed that twelve of eighteen LHON symptomatic cases from the 14 Chinese pedigree harbored the mutations either 11778G > A, 14484T > C or 3460G <formula>></formula> A, respectively, accounting for 66.7%. The mutation 11778G > A in these patients was homoplasmic and prevalent (55.5%, 10 of 18 cases). The mutations 3460G > A and 3394T > C were found to co-exist in one LHON case. The mutation 13708G > A appeared in one LHON pedigree. Smaller amount of sampling and reaction volume, easier target preparation, fast and high-throughput were the main advantages of the biochip over direct DNA sequencing and pyrosequencing. Our findings suggested that primary mutations of 11778G > A, 14484T > C or 3460G > A are main variants"
+        },
+        {
+          "rank": 5,
+          "abstract_id": 9804355,
+          "score": 0.5888,
+          "text": "suggest that the specific nature of the missense mutation, in the context of the protein sequence, can contribute far more to the clinical severity than previously thought. The different EBS subtypes should be viewed as gradations of clinical severity rather than distinct genetic diseases."
+        }
+      ],
+      "retrieval_hit_top5": false,
+      "generated_answer": "Based on the provided passages, there are several types of mutations mentioned:\n\n[1] Polymorphic variants in the COL5A1 gene.\n[2] Splice-site mutation.\n[3] Small insertions or deletions.\n[4] Homoplasmic and heteroplasmic mtDNA mutations.\n[5] Missense mutations.\n\nThese mutations include variations in gene sequences, structural changes such as insertions/deletions, and differences in amino acid substitutions within proteins.",
+      "citations": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "is_idk": false,
+      "rouge_l": 0.0938
+    }
+  ]
+}

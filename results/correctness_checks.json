@@ -29,8 +29,8 @@
   },
   "rag": {
     "max_chunk_words": 150,
-    "max_norm_error_from_1": 1e-07,
-    "disk_index_verified": false,
+    "max_norm_error_from_1": 2e-07,
+    "disk_index_verified": true,
     "perfect_retriever_Hit_Recall_MRR": 1.0,
     "status": "PASS"
   },

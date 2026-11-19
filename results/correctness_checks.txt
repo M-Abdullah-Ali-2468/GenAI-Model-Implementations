@@ -1,5 +1,5 @@
 MAE:   PASS | masked=[48, 48, 48, 48, 48, 48, 48, 48] (48/64) | visible_perturb_diff=0.0 | params=3,173,504
 VAE:   PASS | KL(0,0)=0.000000 | min_KL_1000=42.6306 | params=220,385
 DDPM:  PASS | alpha_bar_T=4.035831e-05 | x_999 mean=-0.00103, std=0.99989 | unet_params=4,028,353
-RAG:   PASS | max_words=150 | max_norm_err=1.00e-07 | perfect_retriever=1.0 | disk_index=False
+RAG:   PASS | max_words=150 | max_norm_err=2.00e-07 | perfect_retriever=1.0 | disk_index=True
 Audit: PASS | files_scanned=24 | forbidden_imports=0
