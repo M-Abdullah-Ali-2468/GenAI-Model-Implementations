@@ -1,12 +1,9 @@
-import json, sys, time
-from pathlib import Path
+import os, json, sys, time
+sys.path.extend([".", "starter"])
 import numpy as np
 import torch
 import torch.nn.functional as F
 from transformers import AutoModel, AutoTokenizer
-
-ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(ROOT / "starter"))
 from bioasq import load_corpus, load_questions
 
 RETRIEVER_NAME = "sentence-transformers/all-MiniLM-L6-v2"
@@ -35,7 +32,6 @@ def chunk_corpus(corpus, max_words=150, overlap=30):
 
 
 def mean_pool_and_normalize(last_hidden_state, attention_mask):
-    # Ignore padding tokens using attention_mask, then L2-normalise
     mask = attention_mask.unsqueeze(-1).to(last_hidden_state.dtype)
     pooled = (last_hidden_state * mask).sum(dim=1) / mask.sum(dim=1).clamp(min=1e-9)
     return F.normalize(pooled, p=2, dim=1)
@@ -58,7 +54,7 @@ class MiniLMEncoder:
 
 
 def main():
-    (ROOT / "checkpoints").mkdir(exist_ok=True); (ROOT / "results").mkdir(exist_ok=True)
+    os.makedirs("checkpoints", exist_ok=True); os.makedirs("results", exist_ok=True)
     t0 = time.time()
     corpus = load_corpus()
     qs = load_questions("test", corpus)
@@ -67,8 +63,9 @@ def main():
 
     embs = MiniLMEncoder().encode([c["text"] for c in chunks])
     norms = np.linalg.norm(embs, axis=1)
-    np.save(ROOT / "checkpoints/rag_chunk_embeddings.npy", embs)
-    (ROOT / "checkpoints/rag_chunks.json").write_text(json.dumps(chunks))
+    np.save("checkpoints/rag_chunk_embeddings.npy", embs)
+    with open("checkpoints/rag_chunks.json", "w") as f:
+        json.dump(chunks, f)
 
     stats = {
         "num_abstracts": len(corpus), "num_chunks": len(chunks),
@@ -77,7 +74,8 @@ def main():
         "norm_min": float(norms.min()), "norm_max": float(norms.max()),
         "index_time_sec": round(time.time() - t0, 2),
     }
-    (ROOT / "results/rag_index_stats.json").write_text(json.dumps(stats, indent=2))
+    with open("results/rag_index_stats.json", "w") as f:
+        json.dump(stats, f, indent=2)
     print(f"Indexed {len(chunks):,} chunks from {len(corpus):,} abstracts in {stats['index_time_sec']}s")
 
 

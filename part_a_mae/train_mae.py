@@ -1,14 +1,9 @@
-import json, sys, time
-from pathlib import Path
+import os, json, time, sys
+sys.path.extend([".", "starter"])
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import torch
 from torch.utils.data import DataLoader, TensorDataset
-
-ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "starter"))
-
 from eurosat import load_eurosat_split, CLASS_NAMES
 from part_a_mae.model import MaskedAutoencoder, count_parameters
 
@@ -38,7 +33,7 @@ def main():
     torch.manual_seed(42)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     gpu = torch.cuda.get_device_name(0) if torch.cuda.is_available() else "CPU"
-    (ROOT / "checkpoints").mkdir(exist_ok=True); (ROOT / "results").mkdir(exist_ok=True)
+    os.makedirs("checkpoints", exist_ok=True); os.makedirs("results", exist_ok=True)
 
     x_tr, _ = load_eurosat_split("train")
     x_te, y_te = load_eurosat_split("test")
@@ -63,13 +58,14 @@ def main():
 
     elapsed = time.time() - t0
     n_params = count_parameters(mae)
-    torch.save({"model_state_dict": mae.state_dict(), "epoch_losses": losses, "num_parameters": n_params, "train_time_sec": elapsed, "gpu": gpu}, ROOT / "checkpoints/mae.pt")
+    torch.save({"model_state_dict": mae.state_dict(), "epoch_losses": losses, "num_parameters": n_params, "train_time_sec": elapsed, "gpu": gpu}, "checkpoints/mae.pt")
 
     log = {"model": "MAE (encoder + decoder)", "num_parameters": n_params, "epochs": 100, "train_images": len(x_tr), "test_images": len(x_te), "epoch_losses": losses, "final_loss": losses[-1], "train_time_sec": round(elapsed, 2), "gpu": gpu}
-    (ROOT / "results/mae_pretrain_log.json").write_text(json.dumps(log, indent=2))
+    with open("results/mae_pretrain_log.json", "w") as f:
+        json.dump(log, f, indent=2)
 
-    plt.figure(figsize=(6.5, 4)); plt.plot(range(1, 101), losses); plt.xlabel("Epoch"); plt.ylabel("Masked MSE"); plt.title("MAE Pretraining Loss"); plt.grid(alpha=0.3); plt.tight_layout(); plt.savefig(ROOT / "results/mae_loss.png", dpi=150); plt.close()
-    save_recons(mae, x_te, y_te, device, ROOT / "results/mae_reconstructions.png")
+    plt.figure(figsize=(6.5, 4)); plt.plot(range(1, 101), losses); plt.xlabel("Epoch"); plt.ylabel("Masked MSE"); plt.title("MAE Pretraining Loss"); plt.grid(alpha=0.3); plt.tight_layout(); plt.savefig("results/mae_loss.png", dpi=150); plt.close()
+    save_recons(mae, x_te, y_te, device, "results/mae_reconstructions.png")
 
 
 if __name__ == "__main__":

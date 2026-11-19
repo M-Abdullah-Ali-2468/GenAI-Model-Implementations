@@ -1,14 +1,9 @@
-import csv, json, re, sys, time
-from pathlib import Path
+import os, csv, json, re, sys, time
+sys.path.extend([".", "starter"])
 import numpy as np
 from rouge_score import rouge_scorer
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
-
-ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "starter"))
-
 from bioasq import load_corpus, load_questions
 from part_d_rag.chunk_and_index import MiniLMEncoder
 from part_d_rag.retriever import DenseRetriever
@@ -48,12 +43,13 @@ class QwenRAGGenerator:
         return self.tok.decode(out[0, inp["input_ids"].shape[1]:], skip_special_tokens=True).strip()
 
 
-def save_human_eval_and_samples(records, res_dir):
+def save_human_eval_and_samples(records):
     picked = [records[i] for i in sorted(np.random.default_rng(42).choice(len(records), min(20, len(records)), replace=False))]
-    (res_dir / "rag_human_eval_20.json").write_text(json.dumps({"seed": 42, "items": picked}, indent=2))
+    with open("results/rag_human_eval_20.json", "w") as f:
+        json.dump({"seed": 42, "items": picked}, f, indent=2)
 
-    csv_path = res_dir / "human_eval.csv"
-    prev = {int(r["item_id"]): r for r in csv.DictReader(csv_path.open(encoding="utf-8"))} if csv_path.exists() else {}
+    csv_path = "results/human_eval.csv"
+    prev = {int(r["item_id"]): r for r in csv.DictReader(open(csv_path))} if os.path.exists(csv_path) else {}
     cols = ["item_id", "diff_image", "diff_true_label", "diff_member1_pred", "diff_member2_pred", "rag_qid", "rag_question", "rag_supported_m1", "rag_supported_m2", "rag_correct_m1", "rag_correct_m2"]
     with open(csv_path, "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=cols); w.writeheader()
@@ -62,7 +58,6 @@ def save_human_eval_and_samples(records, res_dir):
             r = picked[i] if i < len(picked) else None
             w.writerow({**{k: p.get(k, "") for k in cols}, "item_id": i, "rag_qid": r["qid"] if r else p.get("rag_qid", ""), "rag_question": r["question"] if r else p.get("rag_question", "")})
 
-    # 5 qualitative samples (including >=1 retrieval failure and >=1 IDK)
     sel, used = [], set()
     for tag, fn in [("Retrieval Failure", lambda r: not r["retrieval_hit_top5"]), ("Model Abstained", lambda r: r["is_idk"])]:
         for r in records:
@@ -80,16 +75,17 @@ def save_human_eval_and_samples(records, res_dir):
         for k, ch in enumerate(r["retrieved_chunks"], 1):
             md.append(f"- [{k}] Abstract `{ch['abstract_id']}` (cos={ch['score']}): {ch['text'][:260]}...")
         md.append("")
-    (res_dir / "samples.md").write_text("\n".join(md), encoding="utf-8")
+    with open("results/samples.md", "w", encoding="utf-8") as f:
+        f.write("\n".join(md))
 
 
 def main():
-    res_dir = ROOT / "results"; res_dir.mkdir(exist_ok=True)
+    os.makedirs("results", exist_ok=True)
     corpus = load_corpus()
     qs = load_questions("test", corpus)[:100]
 
     enc = MiniLMEncoder()
-    ret = DenseRetriever(ROOT / "checkpoints/rag_chunk_embeddings.npy", ROOT / "checkpoints/rag_chunks.json", encoder=enc)
+    ret = DenseRetriever(encoder=enc)
     q_embs = ret.encode_queries([q["question"] for q in qs])
     del enc.model
     if torch.cuda.is_available():
@@ -119,10 +115,12 @@ def main():
         if (i + 1) % 10 == 0:
             print(f"RAG {i + 1:3d}/100 | ROUGE-L={np.mean(rls):.4f} | {time.time() - t0:.1f}s")
 
-    (res_dir / "rag_answers.jsonl").write_text("\n".join(json.dumps(r, ensure_ascii=False) for r in records) + "\n", encoding="utf-8")
+    with open("results/rag_answers.jsonl", "w", encoding="utf-8") as f:
+        f.write("\n".join(json.dumps(r, ensure_ascii=False) for r in records) + "\n")
     summary = {"num_questions": len(records), "rouge_l": round(float(np.mean(rls)), 4), "citation_precision": round(ok_c / tot_c, 4) if tot_c else 0.0, "total_citations": tot_c, "correct_citations": ok_c, "idk_rate": round(idks / len(records), 4), "idk_count": idks}
-    (res_dir / "rag_generation_results.json").write_text(json.dumps(summary, indent=2))
-    save_human_eval_and_samples(records, res_dir)
+    with open("results/rag_generation_results.json", "w") as f:
+        json.dump(summary, f, indent=2)
+    save_human_eval_and_samples(records)
     print(summary)
 
 

@@ -1,14 +1,9 @@
-import json, sys
-from pathlib import Path
+import os, json, sys
+sys.path.extend([".", "starter"])
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import torch
-
-ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "starter"))
-
 from bioasq import load_corpus, load_questions
 from part_d_rag.chunk_and_index import MiniLMEncoder, chunk_abstract, mean_pool_and_normalize
 
@@ -20,7 +15,7 @@ def hit_at_k(ranked, rel, k):
 
 def recall_at_k(ranked, rel, k):
     rel_s = set(rel)
-    denom = min(k, len(rel_s))  # ensures perfect retriever = 1.0
+    denom = min(k, len(rel_s))
     return sum(1 for a in ranked[:k] if a in rel_s) / denom if denom else 0.0
 
 
@@ -33,9 +28,10 @@ def mrr_at_10(ranked, rel):
 
 
 class DenseRetriever:
-    def __init__(self, emb_path, chunks_path, encoder=None):
+    def __init__(self, emb_path="checkpoints/rag_chunk_embeddings.npy", chunks_path="checkpoints/rag_chunks.json", encoder=None):
         self.embs = np.load(emb_path).astype(np.float32)
-        self.chunks = json.loads(Path(chunks_path).read_text(encoding="utf-8"))
+        with open(chunks_path) as f:
+            self.chunks = json.load(f)
         self.encoder = encoder
         aids = np.array([c["abstract_id"] for c in self.chunks], dtype=np.int64)
         self.unique_aids, self.c2a = np.unique(aids, return_inverse=True)
@@ -51,7 +47,6 @@ class DenseRetriever:
         return [(self.chunks[int(i)], float(scores[int(i)])) for i in idx]
 
     def search_abstracts(self, q_emb, k=20):
-        # Abstract score = max cosine score among its chunks
         scores = self.embs @ q_emb.reshape(-1)
         abs_sc = np.full(len(self.unique_aids), -np.inf, dtype=np.float32)
         np.maximum.at(abs_sc, self.c2a, scores)
@@ -60,7 +55,7 @@ class DenseRetriever:
         return [(int(self.unique_aids[int(i)]), float(abs_sc[int(i)])) for i in idx]
 
 
-def verify_rag(embeddings_path=None, chunks_path=None):
+def verify_rag(embeddings_path="checkpoints/rag_chunk_embeddings.npy", chunks_path="checkpoints/rag_chunks.json"):
     tc = chunk_abstract(1, " ".join(f"w{i}" for i in range(410)), 150, 30)
     max_wc = max(len(c["text"].split()) for c in tc)
     assert max_wc <= 150 and tc[0]["text"].split()[-30:] == tc[1]["text"].split()[:30]
@@ -71,9 +66,10 @@ def verify_rag(embeddings_path=None, chunks_path=None):
     assert norm_err < 1e-5
 
     disk_ok = False
-    if embeddings_path and embeddings_path.exists() and chunks_path and chunks_path.exists():
+    if os.path.exists(embeddings_path) and os.path.exists(chunks_path):
         norm_err = float(np.abs(np.linalg.norm(np.load(embeddings_path), axis=1) - 1).max())
-        max_wc = max(len(c["text"].split()) for c in json.loads(chunks_path.read_text(encoding="utf-8")))
+        with open(chunks_path) as f:
+            max_wc = max(len(c["text"].split()) for c in json.load(f))
         assert norm_err < 1e-4 and max_wc <= 150
         disk_ok = True
 
@@ -86,10 +82,10 @@ def verify_rag(embeddings_path=None, chunks_path=None):
 
 
 def main():
-    (ROOT / "results").mkdir(exist_ok=True)
+    os.makedirs("results", exist_ok=True)
     corpus = load_corpus()
     qs = load_questions("test", corpus)
-    ret = DenseRetriever(ROOT / "checkpoints/rag_chunk_embeddings.npy", ROOT / "checkpoints/rag_chunks.json")
+    ret = DenseRetriever()
     q_embs = ret.encode_queries([q["question"] for q in qs])
 
     hits, recalls, mrrs, fails = {1: [], 5: [], 10: []}, {k: [] for k in range(1, 21)}, [], []
@@ -111,13 +107,14 @@ def main():
         "recall_curve": {str(k): round(float(np.mean(recalls[k])), 4) for k in range(1, 21)},
         "num_failures_top10": len(fails), "sample_failures_top10": fails[:15],
     }
-    (ROOT / "results/rag_retrieval_results.json").write_text(json.dumps(out, indent=2))
+    with open("results/rag_retrieval_results.json", "w") as f:
+        json.dump(out, f, indent=2)
     print(f"Hit@1/5/10={out['Hit@1']}/{out['Hit@5']}/{out['Hit@10']} | Recall@1/5/10={out['Recall@1']}/{out['Recall@5']}/{out['Recall@10']} | MRR@10={out['MRR@10']}")
 
     ks = list(range(1, 21))
     plt.figure(figsize=(7, 4)); plt.plot(ks, [np.mean(recalls[k]) for k in ks], "o-")
     plt.xticks(ks); plt.ylim(0, 1.05); plt.xlabel("k"); plt.ylabel("Recall@k"); plt.title("BioASQ Retrieval Recall@k"); plt.grid(alpha=0.3)
-    plt.tight_layout(); plt.savefig(ROOT / "results/rag_recall_curve.png", dpi=150); plt.close()
+    plt.tight_layout(); plt.savefig("results/rag_recall_curve.png", dpi=150); plt.close()
 
 
 if __name__ == "__main__":

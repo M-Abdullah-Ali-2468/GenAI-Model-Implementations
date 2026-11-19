@@ -1,15 +1,11 @@
-import sys
-from pathlib import Path
+import os, sys
+sys.path.extend([".", "starter"])
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import streamlit as st
 import torch
 import torch.nn as nn
-
-ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "starter"))
 
 from eurosat import CLASS_NAMES as EUROSAT_CLASSES, load_eurosat_split
 from uhat import load_uhat_characters
@@ -21,19 +17,19 @@ from part_d_rag.chunk_and_index import MiniLMEncoder
 from part_d_rag.retriever import DenseRetriever
 from part_d_rag.generate_and_eval import MEDICAL_NOTICE, QwenRAGGenerator, extract_citations
 
-CKPT = ROOT / "checkpoints"
+UHAT_PATH = "/kaggle/input/datasets/hazrat/uhat-urdu-handwritten-text-dataset" if os.path.exists("/kaggle/input/datasets/hazrat/uhat-urdu-handwritten-text-dataset") else "starter/data/uhat"
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 st.set_page_config(page_title="Four Generative Models", layout="wide")
 
 
 @st.cache_resource
 def load_mae():
-    if not (CKPT / "mae.pt").exists() or not (CKPT / "mae_classifier.pt").exists():
+    if not os.path.exists("checkpoints/mae.pt") or not os.path.exists("checkpoints/mae_classifier.pt"):
         return None, None
     mae = MaskedAutoencoder().to(DEVICE)
-    mae.load_state_dict(torch.load(CKPT / "mae.pt", map_location=DEVICE, weights_only=False)["model_state_dict"])
+    mae.load_state_dict(torch.load("checkpoints/mae.pt", map_location=DEVICE, weights_only=False)["model_state_dict"])
     clf = nn.Linear(192, 10).to(DEVICE)
-    clf.load_state_dict(torch.load(CKPT / "mae_classifier.pt", map_location=DEVICE, weights_only=False)["classifier_state_dict"])
+    clf.load_state_dict(torch.load("checkpoints/mae_classifier.pt", map_location=DEVICE, weights_only=False)["classifier_state_dict"])
     return mae.eval(), clf.eval()
 
 
@@ -44,9 +40,9 @@ def load_eurosat():
 
 @st.cache_resource
 def load_vae():
-    if not (CKPT / "vae.pt").exists():
+    if not os.path.exists("checkpoints/vae.pt"):
         return None, []
-    ck = torch.load(CKPT / "vae.pt", map_location=DEVICE, weights_only=False)
+    ck = torch.load("checkpoints/vae.pt", map_location=DEVICE, weights_only=False)
     vae = ConvVAE(ck.get("latent_dim", 16)).to(DEVICE)
     vae.load_state_dict(ck["model_state_dict"])
     return vae.eval(), ck.get("class_names", [])
@@ -54,15 +50,14 @@ def load_vae():
 
 @st.cache_resource
 def load_uhat_te(names_tuple):
-    root = ROOT / "starter/data/uhat"
-    return load_uhat_characters(str(root), "test", list(names_tuple) or None) if root.exists() else (None, None, list(names_tuple))
+    return load_uhat_characters(UHAT_PATH, "test", list(names_tuple) or None) if os.path.exists(UHAT_PATH) else (None, None, list(names_tuple))
 
 
 @st.cache_resource
 def load_ddpm():
-    if not (CKPT / "ddpm.pt").exists():
+    if not os.path.exists("checkpoints/ddpm.pt"):
         return None, None, []
-    ck = torch.load(CKPT / "ddpm.pt", map_location=DEVICE, weights_only=False)
+    ck = torch.load("checkpoints/ddpm.pt", map_location=DEVICE, weights_only=False)
     unet = build_unet(len(ck["class_names"])).to(DEVICE)
     unet.load_state_dict(ck["model_state_dict"])
     sched = DDPMSchedule(ck["T"], ck["beta_start"], ck["beta_end"], DEVICE)
@@ -71,9 +66,9 @@ def load_ddpm():
 
 @st.cache_resource
 def load_rag():
-    if not (CKPT / "rag_chunk_embeddings.npy").exists():
+    if not os.path.exists("checkpoints/rag_chunk_embeddings.npy"):
         return None
-    return DenseRetriever(CKPT / "rag_chunk_embeddings.npy", CKPT / "rag_chunks.json", MiniLMEncoder(device=DEVICE))
+    return DenseRetriever(encoder=MiniLMEncoder(device=DEVICE))
 
 
 @st.cache_resource
@@ -128,7 +123,7 @@ with t_vae:
         with right:
             x_u, l_u, names = load_uhat_te(tuple(vae_names))
             if x_u is None:
-                st.info("Unzip UHaT into starter/data/uhat/ to interpolate test characters.")
+                st.info(f"UHaT not found at {UHAT_PATH}")
             else:
                 ca = st.selectbox("Character A", names, 0)
                 cb = st.selectbox("Character B", names, min(15, len(names) - 1))

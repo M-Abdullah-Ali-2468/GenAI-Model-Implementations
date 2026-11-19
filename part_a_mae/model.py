@@ -1,9 +1,6 @@
-import sys
-from pathlib import Path
+import sys; sys.path.extend([".", "starter"])
 import torch
 import torch.nn as nn
-
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "starter"))
 from eurosat import patchify, unpatchify, PATCH
 
 
@@ -14,14 +11,12 @@ class MaskedAutoencoder(nn.Module):
         self.num_mask = num_patches - self.num_keep
         self.dec_dim = dec_dim
 
-        # Encoder sees only the 16 visible patches
         self.patch_embed = nn.Linear(patch_dim, enc_dim)
         self.enc_pos = nn.Parameter(torch.randn(1, num_patches, enc_dim) * 0.02)
         enc_layer = nn.TransformerEncoderLayer(enc_dim, nhead=3, dim_feedforward=768, activation="gelu", batch_first=True, norm_first=True)
         self.encoder = nn.TransformerEncoder(enc_layer, num_layers=6, enable_nested_tensor=False)
         self.enc_norm = nn.LayerNorm(enc_dim)
 
-        # Decoder fills the 48 masked slots with a learned mask token
         self.dec_embed = nn.Linear(enc_dim, dec_dim)
         self.mask_token = nn.Parameter(torch.randn(1, 1, dec_dim) * 0.02)
         self.dec_pos = nn.Parameter(torch.randn(1, num_patches, dec_dim) * 0.02)
@@ -39,7 +34,6 @@ class MaskedAutoencoder(nn.Module):
         ids_keep = ids_shuffle[:, :self.num_keep]
         x_vis = torch.gather(x, 1, ids_keep.unsqueeze(-1).expand(-1, -1, D))
 
-        # 0 = visible, 1 = masked (restored to original patch order)
         mask = torch.ones(B, L, device=x.device, dtype=x.dtype)
         mask[:, :self.num_keep] = 0.0
         mask = torch.gather(mask, 1, ids_restore)
@@ -47,8 +41,7 @@ class MaskedAutoencoder(nn.Module):
 
     @staticmethod
     def compute_masked_loss(pred, target, mask):
-        mse_per_patch = ((pred - target) ** 2).mean(dim=-1)
-        return (mse_per_patch * mask).sum() / mask.sum()
+        return (((pred - target) ** 2).mean(dim=-1) * mask).sum() / mask.sum()
 
     def forward(self, images, noise=None):
         target = patchify(images, p=PATCH)
@@ -63,7 +56,6 @@ class MaskedAutoencoder(nn.Module):
         return self.compute_masked_loss(pred, target, mask), pred, mask
 
     def encode_all(self, images):
-        # All 64 patches (no masking), mean-pooled into 192-d feature
         x = self.patch_embed(patchify(images, p=PATCH)) + self.enc_pos
         return self.enc_norm(self.encoder(x)).mean(dim=1)
 
