@@ -129,28 +129,43 @@ with t_vae:
     with right:
         st.subheader("Latent Interpolation")
         x_u, l_u, names = load_uhat_te(tuple(vae_names))
-        if x_u is None:
-            st.info(f"Unzip UHaT into `{UHAT_PATH}` to pick test characters for interpolation.")
-        else:
+        if x_u is not None:
             ca = st.selectbox("Character A", names, 0)
             cb = st.selectbox("Character B", names, min(15, len(names) - 1))
             ia = int((l_u == names.index(ca)).nonzero(as_tuple=True)[0][0])
             ib = int((l_u == names.index(cb)).nonzero(as_tuple=True)[0][0])
             alpha = st.slider(f"Morph ({ca} -> {cb})", 0.0, 1.0, 0.5, 0.05)
             with torch.no_grad():
-                ma, _ = vae.encode(x_u[ia:ia + 1].to(DEVICE))
-                mb, _ = vae.encode(x_u[ib:ib + 1].to(DEVICE))
-                morph = vae.decode((1 - alpha) * ma + alpha * mb)[0, 0].cpu().numpy()
-                strip = vae.interpolate(x_u[ia].to(DEVICE), x_u[ib].to(DEVICE), steps=10).cpu()
-            s1, s2, s3 = st.columns(3)
-            s1.image(x_u[ia, 0].numpy(), caption=ca, width=120, clamp=True)
-            s2.image(morph, caption=f"alpha={alpha:.2f}", width=120, clamp=True)
-            s3.image(x_u[ib, 0].numpy(), caption=cb, width=120, clamp=True)
+                za, _ = vae.encode(x_u[ia:ia + 1].to(DEVICE))
+                zb, _ = vae.encode(x_u[ib:ib + 1].to(DEVICE))
+                img_a, img_b = x_u[ia, 0].numpy(), x_u[ib, 0].numpy()
+                label_a, label_b = ca, cb
+        else:
+            st.session_state.setdefault("vae_pair_seed", 7)
+            if st.button("New latent pair"):
+                st.session_state.vae_pair_seed += 1
+            alpha = st.slider("Interpolation alpha (A -> B)", 0.0, 1.0, 0.5, 0.05)
+            torch.manual_seed(st.session_state.vae_pair_seed)
+            za = torch.randn(1, vae.latent_dim, device=DEVICE)
+            zb = torch.randn(1, vae.latent_dim, device=DEVICE)
+            with torch.no_grad():
+                img_a, img_b = vae.decode(za)[0, 0].cpu().numpy(), vae.decode(zb)[0, 0].cpu().numpy()
+            label_a, label_b = "Latent A", "Latent B"
 
-            fig2, axes2 = plt.subplots(1, 10, figsize=(10, 1.3))
-            for i in range(10):
-                axes2[i].imshow(strip[i, 0].numpy(), cmap="gray", vmin=0, vmax=1); axes2[i].axis("off")
-            fig2.tight_layout(pad=0.1); st.pyplot(fig2); plt.close(fig2)
+        with torch.no_grad():
+            alphas = torch.linspace(0, 1, 10, device=DEVICE).unsqueeze(1)
+            morph = vae.decode((1 - alpha) * za + alpha * zb)[0, 0].cpu().numpy()
+            strip = vae.decode((1 - alphas) * za + alphas * zb).cpu()
+
+        s1, s2, s3 = st.columns(3)
+        s1.image(img_a, caption=label_a, width=120, clamp=True)
+        s2.image(morph, caption=f"alpha={alpha:.2f}", width=120, clamp=True)
+        s3.image(img_b, caption=label_b, width=120, clamp=True)
+
+        fig2, axes2 = plt.subplots(1, 10, figsize=(10, 1.3))
+        for i in range(10):
+            axes2[i].imshow(strip[i, 0].numpy(), cmap="gray", vmin=0, vmax=1); axes2[i].axis("off")
+        fig2.tight_layout(pad=0.1); st.pyplot(fig2); plt.close(fig2)
 
 with t_ddpm:
     unet, sched, ddpm_names = load_ddpm()
