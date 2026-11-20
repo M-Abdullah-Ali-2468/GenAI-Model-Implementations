@@ -1,134 +1,98 @@
-# Assignment 04: MAE, VAE, Diffusion (DDPM) and Biomedical RAG
+# Multimodal Generative Suite
 
-PyTorch implementation of four generative models—Masked Autoencoder (EuroSAT), Variational Autoencoder (UHaT), Class-Conditional DDPM (UHaT), and Biomedical RAG (BioASQ)—connected in a single 4-tab Streamlit app.
+From-scratch PyTorch implementations of four generative AI architectures—**Masked Autoencoder (MAE)**, **Convolutional Variational Autoencoder (VAE)**, **Class-Conditional Diffusion (DDPM)**, and **Biomedical Retrieval-Augmented Generation (RAG)**—unified in a single interactive Streamlit application.
 
-All core components are written from scratch following the allowed/forbidden library rules (no pretrained weights in Parts A-C, no `timm`, `scikit-learn`, `sentence-transformers`, `FAISS`, `LangChain`, or `diffusers` schedulers/pipelines).
+All core mechanisms (random patch masking, masked-only MSE, reparameterisation, closed-form KL, DDPM linear noise schedule and Algorithms 1 & 2, attention-mask mean pooling, and dot-product retrieval) are implemented directly in PyTorch and NumPy.
 
-## Repository Layout
+---
 
-```text
-starter/              Given starter files (unchanged)
-part_a_mae/           MAE model, pretraining, reconstructions, few-label linear classifier
-part_b_vae/           ConvVAE model, training, reconstructions, samples, interpolation
-part_c_diffusion/     DDPM noise schedule, U-Net constructor, training, sampling & blind test
-part_d_rag/           Chunking, MiniLM index, dot-product retrieval, Qwen2.5-1.5B generation & eval
-results/              Figures, tables.md, analysis.md, samples.md, rag_answers.jsonl, human_eval.csv
-app/                  Streamlit 4-tab web app (app/app.py)
-```
+## Architecture & Models
 
-## Trained Weights
+| Module | Architecture | Dataset | Key Capability |
+|---|---|---|---|
+| **Part A (`part_a_mae/`)** | Asymmetric ViT MAE (6-layer enc, 2-layer dec) | EuroSAT RGB (`64×64`, 10 classes) | 75% patch masking pretraining + 160-label linear probe |
+| **Part B (`part_b_vae/`)** | Convolutional VAE (`d=16`, Bernoulli decoder) | UHaT (`28×28`, 40 Urdu chars) | Prior sampling & latent-space character interpolation |
+| **Part C (`part_c_diffusion/`)** | Class-Conditional DDPM (`T=1000`, `UNet2DModel`) | UHaT (`28×28`, 40 Urdu chars) | Generates requested Urdu characters from pure noise |
+| **Part D (`part_d_rag/`)** | `all-MiniLM-L6-v2` + `Qwen2.5-1.5B-Instruct` | BioASQ (40,181 PubMed abstracts) | Dense chunk retrieval & cited biomedical Q&A |
 
-Weights are hosted externally (not committed to Git):
-- Link: https://huggingface.co/subhan1501/multimodal-generative-suite
-- The Streamlit app (`app/app.py`) automatically downloads these weights from Hugging Face Hub on first run, or you can place them manually in `checkpoints/`.
+---
 
-## How to Run
+## Pretrained Weights (Hugging Face Hub)
+
+All trained checkpoints and dense indices are hosted on Hugging Face Hub:
+- **Model Hub:** https://huggingface.co/subhan1501/multimodal-generative-suite
+
+When you launch the Streamlit app, `app/app.py` automatically downloads any missing weights into `checkpoints/` via `huggingface_hub`.
+
+---
+
+## Quick Start
 
 ```bash
+# 1. Clone and install dependencies
+git clone https://github.com/Subhans1501/multimodal-generative-suite.git
+cd multimodal-generative-suite
 pip install -r requirements.txt
 
-# Task 0 (unzip UHaT into starter/data/uhat/ first)
-cd starter && python check_starter.py && cd ..
-
-# Correctness checks + forbidden-import audit
-python run_checks.py
-
-# Part A
-python part_a_mae/train_mae.py
-python part_a_mae/train_classifier.py
-
-# Part B
-python part_b_vae/train_vae.py
-
-# Part C
-python part_c_diffusion/train_ddpm.py
-python part_c_diffusion/sample_ddpm.py
-
-# Part D
-python part_d_rag/chunk_and_index.py
-python part_d_rag/retriever.py
-python part_d_rag/generate_and_eval.py
-
-# Refresh tables, analysis, and README from logs
-python update_report.py
-
-# Launch web app
+# 2. Launch the 4-tab Streamlit web app (auto-downloads weights from Hugging Face)
 streamlit run app/app.py
 ```
 
-For Kaggle GPU training, open `kaggle_run_all.ipynb`, attach the Kaggle UHaT dataset (`hazrat/uhat-urdu-handwritten-text-dataset`), set `REPO_URL`, and run all cells.
+### Training from Scratch
 
-## Correctness Checks
+```bash
+# Verify dataset loaders (place UHaT under starter/data/uhat/ for Parts B & C)
+cd starter && python check_starter.py && cd ..
 
-```text
-MAE:   PASS | masked=[48, 48, 48, 48, 48, 48, 48, 48] (48/64) | visible_perturb_diff=0.0 | params=3,173,504
-VAE:   PASS | KL(0,0)=0.000000 | min_KL_1000=42.6306 | params=220,385
-DDPM:  PASS | alpha_bar_T=4.035831e-05 | x_999 mean=-0.00103, std=0.99989 | unet_params=4,028,353
-RAG:   PASS | max_words=150 | max_norm_err=2.00e-07 | perfect_retriever=1.0 | disk_index=True
-Audit: PASS | files_scanned=24 | forbidden_imports=0
+# Part A: MAE pretraining (100 epochs) & few-label linear classifier (200 epochs)
+python part_a_mae/train_mae.py
+python part_a_mae/train_classifier.py
+
+# Part B: Convolutional VAE (30 epochs)
+python part_b_vae/train_vae.py
+
+# Part C: Class-Conditional DDPM (40 epochs) & sampling
+python part_c_diffusion/train_ddpm.py
+python part_c_diffusion/sample_ddpm.py
+
+# Part D: BioASQ chunking/indexing, retrieval eval & Qwen2.5-1.5B generation
+python part_d_rag/chunk_and_index.py
+python part_d_rag/retriever.py
+python part_d_rag/generate_and_eval.py
 ```
 
-# Results Tables
+---
 
-## Table 1 - Data
+## Benchmark Results (Tesla T4 GPU)
 
-| Item | Value |
-|---|---|
-| EuroSAT train / test images; labelled images used | 16,200 / 5,400; 160 |
-| UHaT character classes; train / test images | 40 classes; 28,328 / 4,747 |
-| BioASQ abstracts; chunks; test questions | 40,181 abstracts; 79,332 chunks; 707 test questions |
-| Mean number of relevant abstracts per test question | 8.66 |
+### Training Summary
 
-## Table 2 - Training
-
-| Model | Parameters | Final training loss | Time / GPU |
+| Model | Parameters | Final Training Loss | Training Time |
 |---|---:|---:|---:|
-| MAE (encoder + decoder) | 3,173,504 | 0.006059 | 8.0 min / Tesla T4 |
-| VAE | 220,385 | 130.90 nats | 0.6 min / Tesla T4 |
-| DDPM U-Net | 4,028,353 | 0.022605 | 34.7 min / Tesla T4 |
+| MAE (Encoder + Decoder) | 3,173,504 | 0.006059 (Masked MSE) | 8.0 min |
+| Convolutional VAE | 220,385 | 130.90 nats | 0.6 min |
+| DDPM U-Net | 4,028,353 | 0.022605 (`L_simple` MSE) | 34.7 min |
 
-## Table 3 - Image results
+### Downstream & Generative Metrics
 
-| Metric | Value |
+| Task | Metric | Score |
+|---|---|---|
+| **MAE Few-Label Probe** | Test accuracy on 5,400 EuroSAT tiles (160 labelled train) | **53.72%** (chance: 10.0%) |
+| **VAE Test ELBO** | Negative ELBO (`Reconstruction + KL`) | **131.15** = `106.43 + 24.71` nats |
+| **BioASQ Retrieval** | `Hit@1` / `Hit@5` / `Hit@10` | **0.6223** / **0.8161** / **0.8614** |
+| **BioASQ Retrieval** | `Recall@1` / `Recall@5` / `Recall@10` / `MRR@10` | **0.6223** / **0.5863** / **0.6024** / **0.7061** |
+| **BioASQ Generation (100 Qs)** | `ROUGE-L` / `Citation Precision` / `Abstention Rate` | **0.2169** / **72.31% (47/65)** / **15.0%** |
+
+---
+
+## Visual Highlights
+
+| MAE Reconstructions (75% Masked) | DDPM 40-Class Urdu Samples |
 |---|---|
-| MAE few-label classifier: test accuracy | 53.72% |
-| VAE: test negative ELBO = reconstruction + KL (nats) | 131.15 = 106.43 + 24.71 nats |
-| Diffusion: blind test, member 1 / member 2 correct (of 40) | TBD |
-| Diffusion: images where both members agreed (of 40) | TBD |
+| ![MAE Reconstructions](results/mae_reconstructions.png) | ![DDPM Samples](results/ddpm_samples_40x8.png) |
 
-## Table 4 - Retrieval
-
-| Hit@1 | Hit@5 | Hit@10 | Recall@1 | Recall@5 | Recall@10 | MRR@10 |
-|---:|---:|---:|---:|---:|---:|---:|
-| 0.6223 | 0.8161 | 0.8614 | 0.6223 | 0.5863 | 0.6024 | 0.7061 |
-
-## Table 5 - Generation (100 questions)
-
-| Metric | Value |
+| VAE Prior Samples | BioASQ Recall@k Curve |
 |---|---|
-| ROUGE-L | 0.2169 |
-| Citation precision | 72.31% (47/65) |
-| "I don't know" rate | 15.0% (15/100) |
-| Human: supported, member 1 / member 2 (of 20) | TBD |
-| Human: correct, member 1 / member 2 (of 20) | TBD |
+| ![VAE Samples](results/vae_samples.png) | ![RAG Recall Curve](results/rag_recall_curve.png) |
 
-
-## App Screenshots
-
-| MAE Tab | VAE Tab |
-|---|---|
-| ![MAE](results/screenshots/tab_mae.png) | ![VAE](results/screenshots/tab_vae.png) |
-
-| Diffusion Tab | RAG Tab |
-|---|---|
-| ![DDPM](results/screenshots/tab_ddpm.png) | ![RAG](results/screenshots/tab_rag.png) |
-
-> Medical notice (Part D): *For educational use only. Not medical advice.*
-
-## Links
-
-- Analysis: `results/analysis.md`
-- Qualitative RAG samples: `results/samples.md`
-- Human evaluation sheet: `results/human_eval.csv`
-- Medium blog: `<INSERT_MEDIUM_LINK>`
-- LinkedIn post: `<INSERT_LINKEDIN_LINK>`
+> **Medical Disclaimer (Part D):** *For educational use only. Not medical advice.*
