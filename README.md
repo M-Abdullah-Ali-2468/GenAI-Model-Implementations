@@ -1,4 +1,4 @@
-# Multimodal Generative Suite
+# GenAI-Model-Implementations
 
 From-scratch PyTorch implementations of four generative AI architectures—**Masked Autoencoder (MAE)**, **Convolutional Variational Autoencoder (VAE)**, **Class-Conditional Diffusion (DDPM)**, and **Biomedical Retrieval-Augmented Generation (RAG)**—unified in a single interactive Streamlit application.
 
