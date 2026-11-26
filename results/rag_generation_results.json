@@ -1,0 +1,9 @@
+{
+  "num_questions": 100,
+  "rouge_l": 0.2169,
+  "citation_precision": 0.7231,
+  "total_citations": 65,
+  "correct_citations": 47,
+  "idk_rate": 0.15,
+  "idk_count": 15
+}

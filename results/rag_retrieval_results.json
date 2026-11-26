@@ -1,0 +1,274 @@
+{
+  "num_test_questions": 707,
+  "Hit@1": 0.6223,
+  "Hit@5": 0.8161,
+  "Hit@10": 0.8614,
+  "Recall@1": 0.6223,
+  "Recall@5": 0.5863,
+  "Recall@10": 0.6024,
+  "MRR@10": 0.7061,
+  "recall_curve": {
+    "1": 0.6223,
+    "2": 0.6117,
+    "3": 0.5978,
+    "4": 0.5906,
+    "5": 0.5863,
+    "6": 0.5856,
+    "7": 0.5918,
+    "8": 0.5904,
+    "9": 0.5999,
+    "10": 0.6024,
+    "11": 0.6054,
+    "12": 0.6121,
+    "13": 0.6153,
+    "14": 0.6192,
+    "15": 0.6233,
+    "16": 0.625,
+    "17": 0.6307,
+    "18": 0.6321,
+    "19": 0.634,
+    "20": 0.638
+  },
+  "num_failures_top10": 98,
+  "sample_failures_top10": [
+    {
+      "qid": 4213,
+      "question": "Is capmatinib effective for glioblastoma?",
+      "reference_answer": "No. Combination of capmatinib buparlisib resulted in no clear activity in patients with recurrent PTEN-deficient glioblastoma.",
+      "relevant_ids": [
+        31776899
+      ],
+      "top5_retrieved_ids": [
+        18366283,
+        18035958,
+        32557339,
+        22413865,
+        23363814
+      ]
+    },
+    {
+      "qid": 4456,
+      "question": "What is F105-P?",
+      "reference_answer": "F105-P is a protamine-antibody fusion protein designed to deliver siRNA to HIV-infected or envelope-transfected cells. In specific, it was designed with the protamine coding sequence linked to the C terminus of the heavy chain Fab fragment of an HIV-1 envelope antibody.",
+      "relevant_ids": [
+        15908939
+      ],
+      "top5_retrieved_ids": [
+        26058333,
+        24214964,
+        30258093,
+        23943237,
+        29059618
+      ]
+    },
+    {
+      "qid": 3807,
+      "question": "Which main viral protein is targeted by the drug remdesivir?",
+      "reference_answer": "Viral Susceptibility to the Antiviral Remdesivir (GS-5734) Is Mediated by the Viral Polymerase and the Proofreading Exoribonuclease.",
+      "relevant_ids": [
+        30275474,
+        29511076
+      ],
+      "top5_retrieved_ids": [
+        34497279,
+        33555378,
+        34535038,
+        23102969,
+        25595799
+      ]
+    },
+    {
+      "qid": 4212,
+      "question": "Describe Full Spectrum of Intolerance to Loss-of-function (FUSIL)",
+      "reference_answer": "Full Spectrum of Intolerance to Loss-of-function (FUSIL) is a cross-species gene classification across the full spectrum of mutations in genes of unknown function. FUSIL has been proposed as a method to identify potentially pathogenic variants in genes not previously associated with rare diseases.",
+      "relevant_ids": [
+        32005800
+      ],
+      "top5_retrieved_ids": [
+        19822515,
+        30095537,
+        23567359,
+        15947963,
+        9005271
+      ]
+    },
+    {
+      "qid": 3829,
+      "question": "Is there any role of genotoxic pks + E. coli in cancer?",
+      "reference_answer": "Yes. Genotoxic pks and E. Coli are known to cause mutations in the DNA of cells, which can lead to cancer.",
+      "relevant_ids": [
+        32106218
+      ],
+      "top5_retrieved_ids": [
+        11075932,
+        24296136,
+        9196252,
+        29432909,
+        23245695
+      ]
+    },
+    {
+      "qid": 2630,
+      "question": "Is there any role of interleukin-11 in cardiovascular fibrosis?",
+      "reference_answer": "Yes. Interleukin 11 (IL11) upregulation is the dominant transcriptional response to TGFB1 exposure and required for its profibrotic effect. IL11 and its receptor (IL11RA) are expressed specifically in fibroblasts where they drive non-canonical, ERK-dependent autocrine signalling that is required for fibrogenic protein synthesis. In mice, fibroblast-specific Il11 transgene expression or Il11 injection causes heart and kidney fibrosis and organ failure whereas genetic deletion of Il11ra1 is protective against disease. Thus, inhibition of IL11 prevents fibroblast activation across organs and species in response to a range of important pro-fibrotic stimuli.",
+      "relevant_ids": [
+        29160304
+      ],
+      "top5_retrieved_ids": [
+        7774871,
+        18310510,
+        31423560,
+        26039104,
+        21212673
+      ]
+    },
+    {
+      "qid": 3970,
+      "question": "Does erenumab target the calcitonin gene-related peptide?",
+      "reference_answer": "No, erenumab targets the calcitonin gene-related peptide receptor.",
+      "relevant_ids": [
+        30651064
+      ],
+      "top5_retrieved_ids": [
+        29697153,
+        29406534,
+        31284729,
+        32259079,
+        29263689
+      ]
+    },
+    {
+      "qid": 3886,
+      "question": "What is the mode of administration of AZD8601?",
+      "reference_answer": "AZD8601 is administered intradermally.",
+      "relevant_ids": [
+        32438492
+      ],
+      "top5_retrieved_ids": [
+        20356359,
+        25874001,
+        16573238,
+        8371833,
+        27928026
+      ]
+    },
+    {
+      "qid": 181,
+      "question": "Is the abnormal dosage of ultraconserved elements disfavored in cancer cells?",
+      "reference_answer": "No. Abnormal dosage of ultraconserved elements is highly disfavored in healthy cells but not cancer cells.",
+      "relevant_ids": [
+        25340765
+      ],
+      "top5_retrieved_ids": [
+        26653737,
+        25505227,
+        17160069,
+        15918908,
+        10394397
+      ]
+    },
+    {
+      "qid": 4283,
+      "question": "Is AZD9668 a VEGF mRNA drug?",
+      "reference_answer": "AZD9668 is a reversible and selective inhibitor of neutrophil elastase.",
+      "relevant_ids": [
+        22197578
+      ],
+      "top5_retrieved_ids": [
+        32728595,
+        34188445,
+        16842232,
+        30504800,
+        25939061
+      ]
+    },
+    {
+      "qid": 1630,
+      "question": "Which extra thyroid tissues have thyrotropin (TSH) receptors?",
+      "reference_answer": "TSH receptors are expressed also in extrathyroid tissues. TSH receptors seem to be functional. Extrathyroid tissues include fibrobasts of the orbit and adipose tissue\nThe principal tissues with TSH receptors are:\nadippose tissue\n orbital fibrotic tissue",
+      "relevant_ids": [
+        21956421,
+        22289392,
+        22517745,
+        22399514,
+        22496347
+      ],
+      "top5_retrieved_ids": [
+        8594618,
+        2885829,
+        23926648,
+        7965021,
+        12946875
+      ]
+    },
+    {
+      "qid": 113,
+      "question": "Which are the genes thought to be regulated by EWS/FLI?",
+      "reference_answer": "The EWS/FLI translocation product is the causative oncogene in Ewing sarcoma and acts as an aberrant transcription factor. EWS/FLI dysregulates gene expression during tumorigenesis by abnormally activating or repressing genes. The expression levels of a significant number of genes are affected in Ewing sarcoma, some of which are known to be directly or indirectly regulated by EWS/FLI. Such genes are BCL11B, NRoB1, GSTM4, NKX2.2 and p53.",
+      "relevant_ids": [
+        17114343,
+        16697960,
+        23527175,
+        18927503,
+        15492248,
+        19920188,
+        19718047
+      ],
+      "top5_retrieved_ids": [
+        23894528,
+        17154184,
+        21558189,
+        20691659,
+        28993201
+      ]
+    },
+    {
+      "qid": 3825,
+      "question": "List types of mutations.",
+      "reference_answer": "point mutations\ndeletions\ninsertions\ninversions\ntranslocations",
+      "relevant_ids": [
+        29115104,
+        29878242,
+        27722982
+      ],
+      "top5_retrieved_ids": [
+        28241736,
+        18781615,
+        10796876,
+        21694444,
+        9804355
+      ]
+    },
+    {
+      "qid": 2948,
+      "question": "Name one CCR4 targeted drug.",
+      "reference_answer": "Mogamulizumab is an anti-CCR4 monoclonal antibody.",
+      "relevant_ids": [
+        29414279
+      ],
+      "top5_retrieved_ids": [
+        29425816,
+        12590136,
+        21284830,
+        34343033,
+        11889047
+      ]
+    },
+    {
+      "qid": 186,
+      "question": "Which syndrome is associated with mutant DVL1?",
+      "reference_answer": "Mutations in DVL1 cause an osteosclerotic form of Robinow syndrome.",
+      "relevant_ids": [
+        25817016,
+        25817014
+      ],
+      "top5_retrieved_ids": [
+        23836490,
+        24779060,
+        20213538,
+        7958461,
+        12577208
+      ]
+    }
+  ]
+}

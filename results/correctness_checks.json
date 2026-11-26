@@ -1,0 +1,42 @@
+{
+  "mae": {
+    "masked_per_image": [
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48
+    ],
+    "loss_diff_on_visible_perturbation": 0.0,
+    "total_parameters": 3173504,
+    "status": "PASS"
+  },
+  "vae": {
+    "kl_at_zero_mu_zero_logvar": 0.0,
+    "min_kl_across_1000_random_samples": 42.63058853149414,
+    "total_parameters": 220385,
+    "status": "PASS"
+  },
+  "ddpm": {
+    "alpha_bar_T": 4.0358307160204276e-05,
+    "x_999_mean": -0.00103,
+    "x_999_std": 0.99989,
+    "status": "PASS",
+    "unet_parameters": 4028353
+  },
+  "rag": {
+    "max_chunk_words": 150,
+    "max_norm_error_from_1": 2e-07,
+    "disk_index_verified": true,
+    "perfect_retriever_Hit_Recall_MRR": 1.0,
+    "status": "PASS"
+  },
+  "audit": {
+    "files_scanned": 24,
+    "violations": 0,
+    "status": "PASS"
+  }
+}
